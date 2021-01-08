@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Fonts/AmaticSC-Regular.woff2; 
+                                 Fonts/AmaticSC-Regular.woff;
+                                 Fonts/AmaticSC-Regular.ttf;
+                                 Fonts/AmaticSC-Regular.otf;
+                                 Fonts/AmaticSC-Regular.eot;
+                                 Fonts/AmaticSC-Regular.svg;
+                                 Fonts/AmaticSC-Bold.woff2; 
+                                 Fonts/AmaticSC-Bold.woff;
+                                 Fonts/AmaticSC-Bold.ttf;
+                                 Fonts/AmaticSC-Bold.otf;
+                                 Fonts/AmaticSC-Bold.eot;
+                                 Fonts/AmaticSC-Bold.svg;">
+    <link rel="SHORTCUT ICON" href="liss.svg" type="image/svg+hml">
+</head>
+
+<body alink="#91336c" vlink="#1a5e56" style="background: #fffef5;">
+    <h1 style="text-align: center; font-family: 'Amatic SC', cursive; font-weight: 700; color: #368773">
+        Способы включения шрифтов в документ
+    </h1>
+    <div>
+        <h2 style="font-family: 'Roboto Slab', serif; font-weight: 500; color: #368773">
+            Способ 1
+        </h2>
+        <p style="font-family: 'Roboto Slab', serif; font-weight: 300; text-transform: uppercase; color: #2b4a42">
+            Шрифт можно включить в документ при помощи ссылки на ресурс <a Href="https://fonts.google.com/" target="_blank" title="Да, вам нужно сюда" style="cursor: help">Google
+                Fonts</a>
+        </p>
+        <ul style="list-style-type: decimal; font-family: 'Roboto Slab', serif; font-weight: 300; color: #2b4a42">
+            Для этого необходимо:
+            <li>Зайти на ресурс <a Href="https://fonts.google.com/" target="_blank" title="Точно сюда" style="cursor: grab">Google Fonts</a>;</li>
+            <li>Выбрать наиболее подходящий шрифт;</li>
+            <li>Выбрать несколько начертаний (но не слишком много, чтобы не превышать адекватное время загрузки);</li>
+            <li>Открыть вкладку Выбор данного стиля;</li>
+            <li>Скопировать ссылку на шрифт;</li>
+            <li>Включить в документ ссылку на шрифт в теге 'link' раздела 'head';</li>
+        </ul>
+    </div>
+
+    <hr color="#fcba03">
+
+    <div>
+        <h2 style="font-family: 'Amatic SC', cursive; font-weight: 700; color: #368773">
+            Способ 2
+        </h2>
+        <p style="font-family: 'Amatic SC', cursive; font-weight: 400; text-transform: uppercase; color: #2b4a42">
+            Разместить шрифт на сервере, откуда впоследствии браузер клиента его загрузит
+        </p>
+        <ul style="list-style-image: url(liss.svg); font-family: 'Amatic SC', cursive; font-weight: 400; color: #2b4a42">
+            Для этого необходимо:
+            <li>Зайти на ресурс <a Href="https://fonts.google.com/" target="_blank" title="И снова сюда" style="cursor:cell">Google Fonts</a>;</li>
+            <li>Выбрать наиболее подходящий шрифт;</li>
+            <li>Открыть вкладку Выбор данного стиля;</li>
+            <li>Выбрать несколько начертаний (но не слишком много, чтобы не превышать адекватное время загрузки);</li>
+            <li>Загрузить документ со шрифтом;</li>
+            <li>Конвертировать документ в форматы ttf, eot, otf, woff, woff2, svg, чтобы браузер клиента мог прочитать один
+                из них;</li>
+            <li>Добавить документ .html ссылки на все эти файлы.</li>
+        </ul>
+    </div>
+</body>
+
+</html>
