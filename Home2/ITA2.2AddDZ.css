@@ -21,6 +21,7 @@ h2 {
 }
 
 .headline {
+    text-align: center;
     width: 100%;
     background-color: #50aca3;
     padding: 20px 0;
