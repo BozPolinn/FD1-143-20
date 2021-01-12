@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruce Willis, Chuck Norris</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body style="margin: 0">
+    <h1 style="font-family: Yanone Kaffeesatz, sans-serif;
+        text-align: center;
+        font-weight: 600;">Забавные значения в цветовой палитре</h1>
+    <p style="font-family: Comfortaa, cursive;
+              font-weight: 500;
+              line-height: 2em;">Для кодирования изображений разработаны несколько систем.<br />
+        Одна из таких - система шестнадцатиричного кодирования цвета в формате #XXXXXX.<br />
+        Для кодирования используются следующие символы:
+    </p>
+    <p style="border-style: solid; 
+              border-color: rgb(41, 48, 54); 
+              padding: 10px;
+              font-family: Yanone Kaffeesatz, sans-serif;
+              font-weight: 300;
+              font-size: 40px;
+              letter-spacing: 7px;
+              text-align: center;">
+        0 1 2 3 4 5 6 7 8 9 A B C D E F
+    </p>
+
+    <div style="border-style: solid; 
+                border-color: rgb(41, 48, 54); 
+                background-color:rgb(160, 186, 212);
+                padding: 10px;
+                font-family: Yanone Kaffeesatz, sans-serif;
+                font-weight: 300;
+                font-size: 30px;
+                letter-spacing: 2px;
+                text-align: center;">
+        Пропускаемые цифры распознаются как 0[...]. <br />
+        Некорректные символы распознаются как 0. <br />
+        Так что, например, значения
+        #F0F0F0, F0F0F0, F0F0F, #FxFxFx и FxFxFx – одно и то же.
+    </div>
+    <p style="font-family: Comfortaa, cursive;
+              font-weight: 500;">
+        Подробнейший разбор алгоритма разбора приведен по ссылке. Если применить эти правила, то получим следующее:
+    </p>
+    <ul style="font-family: Comfortaa, cursive;
+               font-weight: 700;
+               line-height: 2em;">
+        <li>Заменяем все неправильные шестнадцатеричные символы нулями 0, chucknorris превращается в c00c0000000;</li>
+        <li>“Добиваем” число нулями до количества знаков, делимого на 3 (11 -> 12), получаем
+            c00c 0000 0000;</li>
+        <li>Разбиваем на три группы, каждая из которых отвечает за одну компоненту RGB:
+            RGB (c00c, 0000, 0000);</li>
+        <li>Обрезаем каждый из аргументов справа, оставляя 2 символа, и получаем наш результат
+            RGB (c0, 00, 00) = #C00000 или он же RGB(192, 0, 0).</li>
+    </ul>
+
+    <div style="border-style: solid; 
+                border-color: rgb(41, 48, 54); 
+                background-color: rgb(160, 186, 212);
+                padding: 10px;
+                font-family: Yanone Kaffeesatz, sans-serif;
+                font-weight: 300;
+                font-size: 30px;
+                letter-spacing: 2px;
+                text-align: center;">
+        <code><font color="chucknorris">font color="chucknorris";</font><br/>
+              <font color="brucewillis">font color="brucewillis";</font><br/>
+              <font color="brucelee">font color="brucelee"</font>
+        </code>
+    </div>
+</body>
+
+</html>
