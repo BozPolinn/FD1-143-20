@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тег Area</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="ITALesson4.3TegArea.css">
 </head>
+
 <body>
-    
+    <div class="Headline">
+        <h1>
+            Приглашаем Вас в кофейню MyPlace
+            <img src="../../IT-academy/Home2/Image/liss.svg" alt="lis" title="lis" width="40">
+        </h1>
+    </div>
+
+    <p>
+        Сегодня мы предлагаем Вам обеденное меню:
+    </p>
+
+    <ul style="list-style-type: none" class="list">
+        <li>Крем-суп с тыквой</li>
+        <li>ОБлепиховый чай</li>
+    </ul>
+
+    <p>
+        Стоимость обеденного меню - 7 рублей.
+    </p>
+
+    <div class="SoupFrame">
+        <img src="Image/area/IMG_0927.jpg" 
+             alt="Суп-пюре" 
+             title="Суп-пюре" 
+             width="80%" 
+             height="80%"
+             usemap="#navigation">
+        <map name="navigation">
+            <area coords="150, 380, 100" 
+                  shape="circle" 
+                  style="outline: none;"
+                  alt="Адрес"
+                  href="https://www.instagram.com/coffee_mesto/?hl=ru">
+        </map>
+    </div>
+
+    <div class="TeaFrame">
+        <img src="Image/area/IMG_4449.jpg" 
+             alt="Облепиховый чай" 
+             title="Облепиховый чай" 
+             width="80%"
+             height="80%"
+             usemap="#teatea">
+        <map name="teatea">
+            <area coords="150, 250, 250, 350"
+                  shape="rect"
+                  style="outline: none;"
+                  alt="Адрес"
+                  href="https://www.instagram.com/coffee_mesto/?hl=ru">
+        </map>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,45 @@
+body {
+    background-color: #fff1e6;
+    font-family: 'Pangolin', cursive; 
+    color: #626164b9;   
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Headline {
+    margin: 0px;
+    padding: 0px;
+    border-bottom-style: solid;
+    border-color: #a2a0a5b9;
+}
+
+.list {
+    font-size: 20px;
+}
+
+.SoupFrame {
+    float: left;
+    width: 40%; 
+    text-align: center;
+    border-style:solid;
+    border-color: #a2a0a5b9;
+    background-color:seashell;
+    margin: 40px 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.TeaFrame {
+    float: left;
+    width: 40%;
+    text-align: center;
+    padding: 0;
+    border-style:solid;
+    border-color: #a2a0a5b9;
+    background-color:seashell;
+    margin: 40px 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
