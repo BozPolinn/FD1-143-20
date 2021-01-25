@@ -1,0 +1,64 @@
+<!-- 
+    5.1+
+Попробуйте в макете блочной вёрстки (MAKET_DIV) реализовать комбинацию ширин колонок 20% / * / 200px, каждая должна иметь свой цветной фон на всю высоту, в каждом углу каждого блока на фоне разместите мячик http://fe.it-academy.by/Examples/ball3.png (итого будет 12 мячиков).
+Результат должен выглядеть примерно так:
+http://fe.it-academy.by/Examples/ball12.png
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball</title>
+</head>
+
+<body style="margin: 0; padding: 0; width: 100%">
+
+            <div style="background: 
+                                    url('img/balld.png') no-repeat top left 20%,
+                                    url('img/balld.png') no-repeat bottom left 20%,
+                                    url('img/ballr.png') no-repeat top right,
+                                    url('img/ballr.png') no-repeat bottom right,
+                                    url('img/ball3.png') no-repeat top left,
+                                    url('img/ball3.png') no-repeat top right,
+                                    url('img/ball3.png') no-repeat bottom right,
+                                    url('img/ball3.png') no-repeat bottom left,
+                                    url('img/violet.png') repeat-y top right,
+                                    url('img/comb.png') repeat-y top left 20%;">
+                <div style="width: 20%; float: left;">
+                    width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20%
+                    width 20%
+                    width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20% width 20%
+                    width
+                    20% width 20%
+                </div>
+
+                <div style="width: 200px; float: right;">
+                    width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px
+                    width 200px
+                    width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px
+                    width 200px
+                    width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px
+                    width 200px
+                    width 200px width 200px width 200px width 200px width 200px width 200px width 200px width 200px
+                    width 200px
+                </div>
+
+                <div style="margin-left: 20%; margin-right: 200px;">
+                    content content content content content content content content content content content content
+                    content
+                    content content content content content content content content content content content
+                </div>
+
+                <div style="clear: both; background-color: darksalmon; height: 10px;">
+
+                </div>
+
+</div>
+
+
+</body>
+
+</html>
