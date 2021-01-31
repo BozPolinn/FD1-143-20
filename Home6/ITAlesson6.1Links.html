@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu></title>
+</head>
+
+<!-- 
+    Дан макет горизонтального меню.
+
+1) Придумать несколько способов сверстать данный макет. +
+Т.е. найти различные способы расположить несколько ссылок в ряд по горизонтали; 
+     найти различные способы сделать красные разделители.
+
+2) Создать проект LINKS. Добавить в него данное меню, свёрстанное всеми найденными способами; 
+   каждый способ — в своём div-контейнере.
+
+   Контейнеру нужно указывать класс; 
+   внутри контейнера — не использовать классов и стилей 
+
+3) В HTML-комментариях пояснить, каким способом ссылки расположены в строку, каким способом сделаны разделители, а также достоинства и недостатки каждого найденного способа.
+   При поднесении мыши текст ссылок должен становиться красным. Ссылки могут вести на любые URLы.
+-->
+
+<style>
+    table {
+        display: table;
+        width: 100%;
+        border-collapse: collapse;
+        border-style: none;
+    }
+
+    div {
+        font-size: 24px;
+    }
+
+    td {
+        width: 20%;
+        border-left: red 3px solid;
+        text-align: center;
+        height: 40px;
+    }
+
+    td:first-child {
+        border-left-style: none;
+    }
+
+    a {
+        color: maroon;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: red;
+    }
+
+    .floatmethod {
+        width: 100%;
+    }
+
+    div>a {
+        width: 19.5%;
+        height: 40px;
+        float: left;
+        text-align: center;
+        border-left: red 3px solid;
+    }
+
+    #first {
+        border-left-style: none;
+    }
+
+    .inlinemethod {
+        text-align:center;
+        width: 100%;
+    }
+
+    span > span{
+        color: red;
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    img {
+        height: 40px;
+    }
+
+    button {
+        width: 17%;
+        height: 40px;
+        background-color: white;
+        border: none;
+        font-size: 20px;
+    }
+
+    li {
+        float: left;
+        list-style-type: none;
+    }
+
+    .list ul li:not(:nth-child(5)):after {
+    content: "";
+    border-right: solid red 3px;
+}
+
+    .list2 ul li:not(:nth-child(5)):after {
+    content: "|";
+    color: red;
+    font-weight: 600;
+}
+
+</style>
+
+<body>
+
+    <!--1. Меню - таблица
+        2. Границы - границы ячеек 
+        + меню сохраняется на одной строке
+        + структура не изменяется при уменьшении размера
+        + высота ячеек меняется, чтобы вместить содержимое
+        + получается отцентрировать содержимое таблицы и равномерно расположить его в строке
+        - нужно создавать и редактировать таблицы -->
+    <div class="tablemenu">
+        <table>
+            <tbody>
+                <tr>
+                    <td><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">первая ссылка</a></td>
+                    <td><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">вторая ссылка</a></td>
+                    <td><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">третья ссылка</a></td>
+                    <td><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">четвертая ссылка</a></td>
+                    <td><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">пятая ссылка</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- 1. Меню - div (float:left)
+         2. Границы - border 
+        + меню сохраняется на одной строке
+        + структура не изменяется при уменьшении размера
+        - высота ячеек не меняется, содержимое не вмещается в div
+        + получается отцентрировать содержимое таблицы и равномерно расположить его в строке
+        - границы не занимают всю высоту увеличенной ячейки
+    -->
+
+    <div class="floatmethod">
+        <div><a id="first" href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">первая ссылка</a></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">вторая ссылка</a></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">третья ссылка</a></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">четвертая ссылка</a></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">пятая ссылка</a></div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    
+
+    <!-- 1. Меню - строчные элементы span 
+         2. Границы - при помощи символа | либо спецсимволов html 
+        + возможно разместить содержимое в одну строку
+        + соседние элементы не вытесняют друг друга
+        - невозможно разместить содержимое по центру без "костылей"
+        - границы не уменьшаются пропорционально размеру изображения
+        - при уменьшении экрана часть содержимого переносится на другую строку
+        -->
+
+    <div class="inlinemethod">
+        <span>&#x2002&#x2003<a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">первая ссылка</a>
+            &#x2002&#x2003<span>|</span></span>
+
+        <span>&#x2002&#x2003<a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">вторая ссылка</a>
+            &#x2002&#x2003<span>|</span></span>
+
+        <span>&#x2002&#x2003<a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">третья ссылка</a>
+            &#x2002&#x2003<span>|</span></span>
+
+        <span>&#x2002&#x2003<a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">четвертая ссылка</a>
+            &#x2002&#x2003<span>|</span></span>
+
+        <span>&#x2002&#x2003<a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">пятая ссылка</a>&#x2002&#x2003</span>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- 1. Меню - кнопки
+         2. Границы - при помощи подготовленного изображения 
+        - меню не сохраняется на одной строке
+        - высота ячеек не меняется, чтобы вместить содержимое
+        - при уменьшении размера содержимое кнопок накладывается на изображение с красной полосой-->
+
+<div>
+    <button><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">первая ссылка</a></button>
+    <img src="img/img2.png">
+    <button><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">вторая ссылка</a></button>
+    <img src="img/img2.png">
+    <button><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">третья ссылка</a></button>
+    <img src="img/img2.png">
+    <button><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">четвертая ссылка</a></button>
+    <img src="img/img2.png">
+    <button><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">пятая ссылка</a></button>
+</div>
+
+
+<!-- 1. Создаем div с перечислением li
+     2. Выстраиваем в ряд
+     3. Границы - при помощи свойства border
+        - меню не сохраняется на одной строке
+        - структура изменяется при уменьшении размера
+        - при уменьшении размера содержимое выстраивается в список
+    -->
+
+<div class="list">
+    <ul>
+        <li><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">&#x2002&#x2003первая ссылка&#x2002&#x2003</a></li>
+        <li><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">&#x2002&#x2003вторая ссылка&#x2002&#x2003</a></li>
+        <li><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">&#x2002&#x2003третья ссылка&#x2002&#x2003</a></li>
+        <li><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">&#x2002&#x2003четвертая ссылка&#x2002&#x2003</a></li>
+        <li><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">&#x2002&#x2003пятая ссылка&#x2002&#x2003</a></li>
+    </ul>
+</div>
+
+<br />
+<br />
+<br />
+
+
+<!-- 1. Создаем div с перечислением li
+     2. Выстраиваем в ряд
+     3. Границы - при помощи символа |, встроенного в содержимое контента селектора
+        - меню не сохраняется на одной строке
+        - структура изменяется при уменьшении размера
+        - при уменьшении размера содержимое выстраивается в список
+    -->
+
+<div class="list2">
+    <ul>
+        <li><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">&#x2002&#x2003первая ссылка&#x2002&#x2003</a></li>
+        <li><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">&#x2002&#x2003вторая ссылка&#x2002&#x2003</a></li>
+        <li><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">&#x2002&#x2003третья ссылка&#x2002&#x2003</a></li>
+        <li><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">&#x2002&#x2003четвертая ссылка&#x2002&#x2003</a></li>
+        <li><a href="http://fe.it-academy.by/Materials/HTMLCSS_V13/HTMLCSS_6.html">&#x2002&#x2003пятая ссылка&#x2002&#x2003</a></li>
+    </ul>
+</div>
+
+
+</body>
+
+</html>

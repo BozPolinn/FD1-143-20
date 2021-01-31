@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8" /><title>*** unnamed text ***</title></head><body>
+<style>
+
+  table.CHESS {
+    border-collapse: collapse;
+  }
+
+  table.CHESS td {
+    width: 50px;
+    height: 50px;
+    border: solid gray 1px;
+  }
+
+  tr:nth-child(odd) td:nth-child(even),
+  tr:nth-child(even) td:nth-child(odd) {
+    background-color: black;
+  }
+
+  tr:first-child td,
+  tr:first-child td:nth-child(even),
+  tr:last-child td,
+  tr:last-child td:nth-child(odd) {
+    height: 25px;
+    background-color: yellowgreen; 
+  }
+
+  tr td:first-child,
+  tr:nth-child(even) td:first-child,
+  tr td:last-child,
+  tr:nth-child(odd) td:last-child {
+      width: 25px;
+      background-color: yellowgreen; 
+  }
+
+</style>
+
+<!-- Создать проект CSS_CHESS. Добавить в него файл CSS_chess.html из библиотеки.
+     В файле CSS_chess.html — HTML-вёрстка простой таблицы 10x10 (левый рисунок).
+     Ничего не меняя в HTML-коде, добавляя только стилевые описания в тег STYLE, 
+     привести таблицу к виду, приведённому на правом рисунке.
+     Селекторы псевдоклассов :not, :nth-*(i) и :nth-*(an+b) не использовать.
+     Селекторы псевдоклассов :first-*, :last-*, :nth-*(odd) и :nth-*(even) использовать можно.-->
+
+<body> 
+
+<table class='CHESS'>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+</table>
+
+</body></html>

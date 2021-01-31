@@ -17,105 +17,208 @@
 
         h1 {
             text-align: center;
+            margin: 10px;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        a,
+        a:visited {
+            text-decoration: none;
+            color: rgb(0, 109, 119);
+        }
+
+        a:hover {
+            color: #B2967D;
+        }
+
+        .pair {
+            width: 100%;
+            height: 100%;
+            display: table;
+        }
+
+        .prop {
+            display: table-cell;
+            height: 100%;
+            width: 50%;
+            padding: 20px 20px;
         }
 
         .list {
             border-style: solid;
             border-color: #B2967D;
+            box-sizing: border-box;
             border-radius: 25px;
             background-color: #ffffff;
-            margin: 10px;
+            width: 100%;
+            height: 100%;
             padding: 20px 40px;
-            width: 40%;
-            float: left;
         }
 
-        .even {
-            clear: both
+        .list:hover{
+            box-shadow: 0px 0px 7px 0px rgba(178,150,125,1)
         }
     </style>
 </head>
 
-<body linl="#b56576" alink="#e29578" vlink="#006d77">
+<body>
     <h1>
         HTML
     </h1>
-<div class="list"> 
-    <h2>
-        Homework1
-    </h2>
-    <ul style="list-style-type: decimal">
-        <li><a href="Home1/ITA1.1Diary.html" target="_blank" title="Файл с домашним заданием">Diary</a></li>
-        <li><a href="Home1/Vizbor/ITA1.2.1Vechno_student.html" target="_blank" title="Файл с домашним заданием">Vizbor
-                1</a></li>
-        <li><a href="Home1/Vizbor/ITA1.2.2Vizbor.html" target="_blank" title="Файл с домашним заданием">Vizbor 2</a>
-        </li>
-        <li><a href="Home1/ITA1.3.1DopDZ.html" target="_blank" title="Файл с домашним заданием">Дополнительно: новые
-                теги</a></li>
-        <li><a href="Home1/Add/ITA1.3.html" target="_blank" title="Файл с домашним заданием">Дополнительно: новые теги +
-                файл CSS</a></li>
-    </ul>
-</div>
 
-<div class="list"> 
-    <h2>
-        Homework2
-    </h2>
-    <ul style="list-style-type: decimal">
-        <li><a href="Home2/ITA2.1Childbook.html" target="_blank" title="Файл с домашним заданием">Childbook</a></li>
-        <li><a href="Home2/ITA2.2Skobki.html" target="_blank" title="Файл с домашним заданием">Skobki</a></li>
-        <li><a href="Home2/ITA2.2AddDZ.html" target="_blank" title="Файл с домашним заданием">Дополнительное задание
-                (форматы изображений)</a></li>
-    </ul>
-</div>
+    <div class="pair">
+        <div class="prop">
+            <div class="list">
+                <h2>
+                    Homework1
+                </h2>
+                <ul style="list-style-type: decimal">
+                    <li><a href="Home1/ITA1.1Diary.html" target="_blank" title="Файл с домашним заданием">Diary</a></li>
+                    <li><a href="Home1/Vizbor/ITA1.2.1Vechno_student.html" target="_blank"
+                            title="Файл с домашним заданием">Vizbor1</a></li>
+                    <li><a href="Home1/Vizbor/ITA1.2.2Vizbor.html" target="_blank" title="Файл с домашним заданием">
+                            Vizbor 2</a></li>
+                    <li><a href="Home1/ITA1.3.1DopDZ.html" target="_blank"
+                            title="Файл с домашним заданием">Дополнительно:
+                            новые теги</a></li>
+                    <li><a href="Home1/Add/ITA1.3.html" target="_blank" title="Файл с домашним заданием">Дополнительно:
+                            новые теги + файл CSS</a></li>
+                </ul>
+            </div>
+        </div>
 
-<div class="list even"> 
-    <h2>
-        Homework3
-    </h2>
-    <ul style="list-style-type: decimal">
-        <li><a href="Home3/ITALesson3.1FONT_GWF.html" target="_blank" title="Файл с домашним заданием">Fonts</a></li>
-        <li><a href="Home3/ITALesson3.2Border.html" target="_blank" title="Файл с домашним заданием">Borders</a></li>
-        <li><a href="Home3/ITALesson3.3ColorNames.html" target="_blank" title="Файл с домашним заданием">FontNames</a>
-        </li>
-        <li><a href="Home3/ITALesson3.4Palette.html" target="_blank" title="Файл с домашним заданием">Palette</a></li>
-    </ul>
-</div>
+        <div class="prop">
+            <div class="list">
+                <h2>
+                    Homework2
+                </h2>
+                <ul style="list-style-type: decimal">
+                    <li><a href="Home2/ITA2.1Childbook.html" target="_blank"
+                            title="Файл с домашним заданием">Childbook</a>
+                    </li>
+                    <li><a href="Home2/ITA2.2Skobki.html" target="_blank" title="Файл с домашним заданием">Skobki</a>
+                    </li>
+                    <li><a href="Home2/ITA2.2AddDZ.html" target="_blank" title="Файл с домашним заданием">Дополнительное
+                            задание (форматы изображений)</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-<div class="list "> 
-    <h2>
-        Homework4
-    </h2>
-    <ul style="list-style-type: decimal">
-        <li><a href="Home4/ITALesson4.1Div_Frame.html" target="_blank" title="Файл с домашним заданием">Div_Frame</a>
-        </li>
-        <li><a href="Home4/ITALesson4.2Frame1Teg.html" target="_blank" title="Файл с домашним заданием">Frame1teg</a>
-        </li>
-        <li><a href="Home4/ITALesson4.4BorderImFrame.html" target="_blank"
-                title="Файл с домашним заданием">BorderImFrame</a></li>
-        <li><a href="Home4/ITALesson4.5OverFlow.html" target="_blank" title="Файл с домашним заданием">OverFlow</a></li>
-        <li><a href="Home4/ITALesson4.6Chess.html" target="_blank" title="Файл с домашним заданием">Chess</a></li>
-        <li><a href="Home4/ITALesson4.3TegArea.html" target="_blank" title="Файл с домашним заданием">Area</a></li>
-        <li><a href="Home4/ITALesson4.7Fryingpan.html" target="_blank" title="Файл с домашним заданием">FryingPan</a></li>
-        <li><a href="Home4/ITALesson4.8Sprite.html" target="_blank" title="Файл с домашним заданием">Sprites</a></li>
-    </ul>
-</div>
+    <div class="pair">
+        <div class="prop">
+            <div class="list">
+                <h2>
+                    Homework3
+                </h2>
+                <ul style="list-style-type: decimal">
+                    <li><a href="Home3/ITALesson3.1FONT_GWF.html" target="_blank"
+                            title="Файл с домашним заданием">Fonts</a>
+                    </li>
+                    <li><a href="Home3/ITALesson3.2Border.html" target="_blank"
+                            title="Файл с домашним заданием">Borders</a>
+                    </li>
+                    <li><a href="Home3/ITALesson3.3ColorNames.html" target="_blank"
+                            title="Файл с домашним заданием">FontNames</a>
+                    </li>
+                    <li><a href="Home3/ITALesson3.4Palette.html" target="_blank"
+                            title="Файл с домашним заданием">Palette</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-<div class="list even"> 
-    <h2>
-        Homework5
-    </h2>
-    <ul style="list-style-type: decimal">
-        <li><a href="Home5/ITAlesson5.1Table.html" target="_blank" title="Файл с домашним заданием">Табличная верстка</a>
-        </li>
-        <li><a href="Home5/ITAlesson5.2Block.html" target="_blank" title="Файл с домашним заданием">Блочная верстка</a>
-        </li>
-        <li><a href="Home5/FootballDiv.html" target="_blank" title="Файл с домашним заданием">Блочная верстка из урока</a>
-        </li>
-        <li><a href="Home5/FootballTab.html" target="_blank" title="Файл с домашним заданием">Табличная верстка из урока</a></li>
-        <li><a href="Home5/ITAlesson5.3ball.html" target="_blank" title="Файл с домашним заданием">Дополнительное задание</a></li>
-    </ul>
-</div>
+        <div class="prop">
+            <div class="list">
+                <h2>
+                    Homework4
+                </h2>
+                <ul style="list-style-type: decimal">
+                    <li><a href="Home4/ITALesson4.1Div_Frame.html" target="_blank"
+                            title="Файл с домашним заданием">Div_Frame</a>
+                    </li>
+                    <li><a href="Home4/ITALesson4.2Frame1Teg.html" target="_blank"
+                            title="Файл с домашним заданием">Frame1teg</a>
+                    </li>
+                    <li><a href="Home4/ITALesson4.4BorderImFrame.html" target="_blank"
+                            title="Файл с домашним заданием">BorderImFrame</a></li>
+                    <li><a href="Home4/ITALesson4.5OverFlow.html" target="_blank"
+                            title="Файл с домашним заданием">OverFlow</a>
+                    </li>
+                    <li><a href="Home4/ITALesson4.6Chess.html" target="_blank"
+                            title="Файл с домашним заданием">Chess</a>
+                    </li>
+                    <li><a href="Home4/ITALesson4.3TegArea.html" target="_blank"
+                            title="Файл с домашним заданием">Area</a>
+                    </li>
+                    <li><a href="Home4/ITALesson4.7Fryingpan.html" target="_blank"
+                            title="Файл с домашним заданием">FryingPan</a></li>
+                    <li><a href="Home4/ITALesson4.8Sprite.html" target="_blank"
+                            title="Файл с домашним заданием">Sprites</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="pair">
+        <div class="prop">
+            <div class="list">
+                <h2>
+                    Homework5
+                </h2>
+                <ul style="list-style-type: decimal">
+                    <li><a href="Home5/ITAlesson5.1Table.html" target="_blank"
+                            title="Файл с домашним заданием">Табличная
+                            верстка</a>
+                    </li>
+                    <li><a href="Home5/ITAlesson5.2Block.html" target="_blank" title="Файл с домашним заданием">Блочная
+                            верстка</a>
+                    </li>
+                    <li><a href="Home5/FootballDiv.html" target="_blank" title="Файл с домашним заданием">Блочная
+                            верстка из
+                            урока</a>
+                    </li>
+                    <li><a href="Home5/FootballTab.html" target="_blank" title="Файл с домашним заданием">Табличная
+                            верстка
+                            из
+                            урока</a></li>
+                    <li><a href="Home5/ITAlesson5.3ball.html" target="_blank"
+                            title="Файл с домашним заданием">Дополнительное
+                            задание</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="prop">
+            <div class="list">
+                <h2>
+                    Homework6
+                </h2>
+                <ul style="list-style-type: decimal">
+                    <li><a href="Home6/ITAlesson6.1Links.html" target="_blank" title="Файл с домашним заданием">Меню и
+                            ссылки</a>
+                    </li>
+                    <li><a href="Home6/ITAlesson6.2CSSchess.html" target="_blank"
+                            title="Файл с домашним заданием">CSS_chess</a>
+                    </li>
+                    <li><a href="Home6/ITALesson6.3Chess1.html" target="_blank"
+                            title="Файл с домашним заданием">Chess1</a>
+                    </li>
+                    <li><a href="Home6/ITALesson6.3Chess2.html" target="_blank"
+                            title="Файл с домашним заданием">Chess2</a>
+                    </li>
+                    <li><a href="Home6/ITAlesson6.4Stars2.html" target="_blank"
+                            title="Файл с домашним заданием">Stars</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 </body>
 
