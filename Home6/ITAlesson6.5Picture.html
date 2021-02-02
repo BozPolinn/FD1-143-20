@@ -1,11 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <!-- font-family: 'EB Garamond', serif; -->
+    <title>PictureTag</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-weight: 400;
+            font-size: 24px;
+        }
+
+        .title {
+            text-align: center;
+            vertical-align: auto;
+            font-size: 40px;
+            font-weight: 600;
+            color: maroon;
+            margin: 30px auto 30px;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .text {
+            width: 38%;
+            float: left;
+            padding: 20px;
+            text-align: justify;
+        }
+
+        .annotation {
+            text-indent: 40px;
+            margin-bottom: 20px;
+        }
+
+        .picture {
+            width: 55%;
+            float: left;
+            padding: 20px;
+        }
+
+        .bold {
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .normal {
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .annotation ul li {
+            list-style-type: decimal;
+            padding-left: 20px;
+            margin-left: 20px;
+            padding-bottom: 20px;
+            font-style: italic;
+        }
+
+        .clearfix {
+            content: none;
+            clear: both;
+        }
+
+        /* table */
+
+        table {
+            width: 100%;
+            margin: 20px;
+            border-collapse: collapse;
+            border: 1px solid black;
+            box-shadow: 0px 0px 7px 0px rgba(178, 150, 125, 1);
+        }
+
+        caption {
+            text-align: left;
+            font-weight: 600;
+            font-style: normal;
+            margin: 10px 0;
+            color: maroon;
+        }
+
+        thead tr th,
+        tbody tr td {
+            padding: 10px 10px;
+            border-collapse: collapse;
+            border: 1px solid black;
+            box-shadow: 0px 0px 7px 0px rgb(146, 146, 146);
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .last {
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="title">
+        <h1>
+            Тег PICTURE
+        </h1>
+    </div>
+    <div class="container">
+        <div class="text">
+            <div class="annotation"><span class="normal">Элемент</span> <span class="bold">&lt;picture&gt;</span> — ещё
+                один
+                инструмент, который предоставляет
+                дополнительные возможности управления выбором изображений. В отличие от srcset и sizes, элемент
+                <span class="bold">&lt;picture&gt;</span> подразумевает выбор изображения в зависимости от условий.
+            </div>
+            <div class="annotation">
+                На разных экранах одно и то же изображение может смотреться по‑разному. Иногда требуется показывать
+                главный объект изображения с окружающими мелкими деталями на широких экранах и кадрировать изображение
+                на узких.
+                Технически — показывать разные изображения с разными пропорциями. Как именно кадрировать, каковы условия
+                подстановки нужных изображений — вопрос дизайна, а <span class="bold">&lt;picture&gt;</span> помогает
+                решить его.
+            </div>
+            <div class="annotation">
+                Вот несколько областей применения <span class="bold">&lt;picture&gt;</span>:
+                <ul>
+                    <li>для экранов ретина можно показывать картинку большего размера;</li>
+                    <li>выводить рисунки разного размера для мобильных и настольных устройств;</li>
+                    <li>отображать изображения разных пропорций, учитывающих ориентацию устройства;</li>
+                    <li>выводить изображение в векторном формате SVG, а для браузеров, его не поддерживающих, показывать
+                        PNG.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="picture">
+            <picture>
+                <source srcset="img/380x590.jpg" media="(max-width: 400px)" />
+                <source srcset="img/580x790.jpg" media="(max-width: 600px)" />
+                <source srcset="img/780x990.jpg" media="(max-width: 800px)" />
+                <img src="img/2.jpg" style="width: 100%;" alt="example" title="example" />
+            </picture>
+        </div>
+    </div>
+
+    <div class="clearfix"> </div>
+
+    <table border="1" bordercolor="black">
+        <colgroup style="width: 20%;">
+            <colgroup style="width: 80%;">
+                <caption>Атрибуты тега &lt;picture&gt;</caption>
+            <thead>
+        <tr>
+            <th>Атрибут</th>
+            <th>Описание</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>media</td>
+                <td>Указывает, что файл адаптирован под определённые виды устройств.</td>
+            </tr>
+            <tr>
+                <td>sizes</td>
+                <td>Указывает допустимые относительные размеры источника. Добавлен в HTML5.</td>
+            </tr>
+            <tr>
+                <td>src</td>
+                <td>Указывает URL адрес медиа-файла.</td>
+            </tr>
+            <tr>
+                <td>srcset</td>
+                <td>Указывает изображения, которые используются в разных ситуациях (для экранов планшетов, для экранов
+                    ретина и др.). Добавлен в HTML5.</td>
+            </tr>
+            <tr>
+                <td>type</td>
+                <td>Указывает MIME-тип медийного источника.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="container">
+        <div class="text">
+            <div class="annotation">
+                    В данном примере используется два изображения: одно в формате SVG, а второе в привычном PNG.
+            </div>
+            <div class="annotation">
+                    Браузеры, которые поддерживают элемент <span class="bold">&lt;picture&gt;</span>, отобразят картинку в векторном виде.
+            </div>
+            <div class="annotation">
+                    Браузер IE покажет изображение в формате PNG. Для наглядности логотип дан размером
+                    128х128 пикселей и увеличен до 256х256.
+            </div>
+        </div>
+
+            <div class="picture center">
+                <picture>
+                    <source srcset="img/html5-logo.svg">
+                    <img src="img/picture1.png" width="256" height="256" alt="Oops">
+                </picture>
+            </div>
+
+            <div class="clearfix"> </div>
+        </div>
+
+        <div class="last">
+            <img src="img/picture1.png" width="700" alt="Oops">
+            <p>То, как отображает картинку IE</p>
+        </div>
 </body>
+
 </html>
