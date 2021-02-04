@@ -8,17 +8,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <!-- font-family: 'Playfair Display', serif; -->
-    <link href="http://fonts.cdnfonts.com/css/post-no-bills-jaffna" rel="stylesheet">
-    <!-- font-family: 'Post No Bills Jaffna', sans-serif;
-         font-family: 'Post No Bills Jaffna Light', sans-serif;
-         font-family: 'Post No Bills Jaffna Medium', sans-serif;
-         font-family: 'Post No Bills Jaffna SemiBold', sans-serif;
-         font-family: 'Post No Bills Jaffna ExtraBold', sans-serif;-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- font-family: 'Raleway', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- font-family: 'Roboto', sans-serif; -->
+
     <title>HouseVOP</title>
     <style>
+        @font-face {
+            font-family: Post No Bills Jaffna SemiBold;
+            src: url('fonts/PostNoBillsJaffna-SemiBold.eot'),
+                 url('fonts/PostNoBillsJaffna-SemiBold.otf'),
+                 url('fonts/PostNoBillsJaffna-SemiBold.svg'),
+                 url('fonts/PostNoBillsJaffna-SemiBold.ttf'),
+                 url('fonts/PostNoBillsJaffna-SemiBold.woff'),
+                 url('fonts/PostNoBillsJaffna-SemiBold.woff2');
+        }
+
         body {
             font-family: 'Playfair Display', serif;
             font-weight: 400;
@@ -63,10 +71,10 @@
         .container1 .housevop p:first-child,
         .footer .housevop p:first-child {
             font-family: Post No Bills Jaffna SemiBold;
-            font-style: normal;
             font-weight: 600;
             font-size: 36px;
             line-height: 54px;
+            letter-spacing: 1.5px;
         }
 
         .container1 .housevop p:last-child,
@@ -74,7 +82,7 @@
             font-family: Raleway;
             font-size: 12px;
             line-height: 14px;
-            letter-spacing: 0.12em;
+            letter-spacing: 2px;            
             text-align: center;
             text-transform: uppercase;
         }
@@ -109,14 +117,15 @@
         }
 
         .requisites {
-            margin: -75px 637px 0 547px;
-            text-align: center;
+            margin: -75px 0 0 659.15px;
+            text-align: left;
         }
 
         .mapicon {
             display: inline-block;
             height: 21px;
             width: 14.71px;
+            padding-right: 18.15px;
             background: url(img/Vector2_1.png) no-repeat center,
                 url(img/Vector2.png) no-repeat center;
         }
@@ -130,7 +139,11 @@
         }
 
         .requisites span:first-child {
-            padding-right: 165px;
+            padding-right: 100px;
+        }
+
+        .requisites span img {
+            padding-right: 15px;
         }
 
         /* Container 2 */
@@ -143,12 +156,17 @@
         }
 
         .bonuses {
-            text-align: center;
+            padding-left: 563px;
         }
 
         .bonuses div {
             display: inline-block;
             margin-right: 70px;
+            text-align: center;
+            font-family: Roboto;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 27px;
         }
 
         .bonuses div:nth-child(4) {
@@ -397,9 +415,9 @@
     }
 
     .footer .housevop {
-        width: 138px;
+        width: 146px;
         height: 70px;
-        padding-right: 166px;
+        padding-right: 154px;
         padding-top: 60px;
         padding-left: 405px;
         float: left;
@@ -431,7 +449,7 @@
     }
 
     .foot2 {
-        margin-right: 166px;
+        margin-right: 150px;
     }
 
     .foot3 span {
