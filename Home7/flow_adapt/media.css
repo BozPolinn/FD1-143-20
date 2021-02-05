@@ -1,0 +1,78 @@
+/* Для устройств с размером экрана 768px */
+@media all and (max-width: 920px) {
+    body {
+        font-size: 20px;
+        border: none;
+    }
+    
+    .title {
+        font-size: 18px;
+    }
+
+    .text {
+        margin: 0 0 0 235px;
+    }
+}
+
+/* Для устройств с размером экрана 640px */
+@media all and (max-width: 641px) {
+    .headline {
+        font-size: 22px;
+    }
+        
+    .image {
+        width: 80%;
+        margin-left: 10%;
+        float: none;
+    }
+
+    .image:hover {
+        width: 80%;
+        margin-left: 10%;
+        float: none;
+    }
+
+}
+
+/* Для устройств с размером экрана 425px */
+@media all and (max-width: 426px) {
+    body {
+        font-size: 15px;
+        background-image: url('img/love.jpg');
+        background-position: right top;
+        background-size: 43px;
+        background-repeat: repeat-y;
+        box-sizing: border-box;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .headline {
+        height: 50px;
+        padding-top: 30px;
+        font-size: 18px;
+    }
+
+    .first {
+        background-image: none;
+    }
+
+    .info {
+        width: inherit;
+        position: inherit;
+        border: none;
+    }
+
+    .text {
+        margin: 0;
+    }
+}
+
+/* Для устройств с размером экрана 425px, 325px */
+@media all and (max-width: 426px) {
+    .text {
+        padding: 20px 45px 0 20px;
+    }
+}

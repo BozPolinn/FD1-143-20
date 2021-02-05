@@ -1,0 +1,58 @@
+body {
+    font-size: 24px;
+    margin: 0;
+    padding: 0%;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bottop {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(134, 185, 226);
+    color:midnightblue;
+    font-weight: 600;
+}
+
+picture {
+    float: left;
+    width: 30%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.img {
+    width: 100%;
+}
+
+.first {
+    vertical-align: top;
+    padding: 20px;
+}
+
+.back {
+    background: url('img/ballwall.png') top right repeat-y,
+                url(img/pink.png) repeat-y top left;
+}
+
+.one {
+    width: 200px;
+    float: left;
+    text-align: left;
+}
+
+.two {
+    text-align: justify;
+    margin-left: 240px;
+
+}
+
+.clearfix {
+    clear: both;
+}
+

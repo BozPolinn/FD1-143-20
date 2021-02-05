@@ -1,0 +1,70 @@
+/* Для больших экранов 1200px */
+
+@media all and (max-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/* Для  экранов 786px */
+@media all and (max-width: 790px) {
+    body {
+        font-size: 18px;
+    }  
+    
+    .img {
+        padding-top: 8px;
+    }
+    
+    .one {
+        width: 165px;
+    }
+
+    .two {
+        margin-left: 205px;
+    }
+
+    .back {
+        background: url('img/ballwall.png') top right repeat-y,
+                    url('img/pink205.png') repeat-y top left;
+    }
+}
+
+/* Для малых экранов 425px */
+@media all and (max-width: 426px) {
+    body {
+        font-size: 14px;
+    }
+
+    .back {
+        background-image: none;
+    }
+
+    .one {
+        float: none;
+        overflow: hidden;
+        width: inherit;
+        background: url('img/pink425.png') repeat-y top left;
+    }
+
+    .one ul {
+        padding-left: 140px;
+    }
+
+    .two {
+        margin-left: 0;
+        background: url('img/ballwall.png') top right repeat-y;
+    }
+
+    .clearfix {
+        clear: none;
+    }
+
+}
+
+/* Для малых экранов 320px */
+@media all and (max-width: 321px) {
+    .one ul {
+        padding-left: 80px;
+    }
+}

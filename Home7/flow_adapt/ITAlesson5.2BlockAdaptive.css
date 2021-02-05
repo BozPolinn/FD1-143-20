@@ -1,0 +1,101 @@
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #F0EFEB;
+            font-family: 'Balsamiq Sans', cursive;
+            font-weight: 400;
+            font-size: 24px;
+            color: #4A4E69;
+            text-align: center;
+            border: none;
+        }
+
+        .borders {
+            border-top: 1px black solid;
+            border-bottom: 1px black solid;
+            border-right: none;
+            border-left: none;
+        }
+
+        .headline {
+            height: 60px;
+            padding-top: 30px;
+            font-size: 30px;
+            font-weight: 700;
+            background-image: url('img/love.jpg');
+            background-position: right top;
+            background-size: 43px;
+            background-repeat: repeat-y;
+        }
+
+        .title {
+            font-family: 'Balsamiq Sans', cursive;
+            font-weight: 700;
+            padding: 20px;
+            background-color: #DBE7E4;
+
+        }
+
+        .position {
+            height: auto;
+            position: relative;
+        }
+
+        .first {
+            vertical-align: top;
+            background-image: url('img/love.jpg');
+            background-position: right top;
+            background-size: 43px;
+            background-repeat: repeat-y;
+            box-sizing: border-box;
+        }
+
+        .info {
+            text-align: left;
+            width: 25%;
+            float: left;
+            padding: 20px 45px 20px 20px;
+            border-right: 1px black solid;
+            height: 100%;
+            position: absolute;
+            min-width: 235px;
+        }
+
+        .text {
+            text-align: left;
+            margin: 0 0 0 25%;
+            padding: 20px 45px 20px 20px;
+        }
+
+        .image {
+            text-align: center;
+            width: 30%;
+            padding: 0%;
+            margin-left: 2.5%;
+            margin-bottom: 2.5%;
+            float: left;
+            box-shadow: none;
+            border-radius: 5px;
+        }
+
+        .image:hover {
+            width: 30%;
+            padding: 0%;
+            margin-left: 2.5%;
+            margin-bottom: 2.5%;
+            float: left;
+            box-shadow: 1px 1px 3px 1px rgba(94, 94, 94, 0.575);
+            border-radius: 5px;
+            cursor: crosshair;
+        }
+
+        .layer {
+            clear: both;
+            height: 0;
+            width: 100%;
+        }
+
+        .footer {
+            border-bottom: none;
+        }
