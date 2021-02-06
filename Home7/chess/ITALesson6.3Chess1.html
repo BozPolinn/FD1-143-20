@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chess</title>
-    <style> 
-    .h1 {
-        font-weight: bold;
-        font-size: 24px;
-    }
-    
-    .date {
-        color: #2db34a;
-    }
+    <style>
+        .h1 {
+            font-weight: bold;
+            font-size: 24px;
+        }
 
-    .champion {
-        color: red;
-        font-weight: bold;
-    }
+        .date {
+            color: #2db34a;
+        }
 
-    .info {
-        color:blue;
-        font-style: italic;
-    }
+        .champion {
+            color: red;
+            font-weight: bold;
+        }
 
-    a[href^='https://']::before {
-        background-image: url('img/extref.png');
-        background-repeat: no-repeat;
-        background-position: center left;
-        padding-left: 10px;
-        content: url('.');
-    }
+        .info {
+            color: blue;
+            font-style: italic;
+        }
+
+        a[href^='http'] {
+            background-image: url('img/extref.png');
+            background-position: center left;
+            background-repeat: no-repeat;
+            padding-left: 10px;
+        }
+
+        @media print {
+            a[href^='http']::before {
+                content: "(ссылка ";
+            }
+
+            a[href^='http']::after {
+                content: " на https://chesspro.ru/statistic/botvinnik.shtml)";
+            }
+
+            a[href^='http'] {
+                text-decoration: none;
+            }
+        }
     </style>
 </head>
+
+<!-- "(ссылка Информация на https://chesspro.ru/statistic/botvinnik.shtml)" -->
 
 <!-- "7.1+
 На странице про шахматистов (проект CHESS) сделать так, чтобы при печати на принтере ВМЕСТО каждой внешней ссылки печаталось
@@ -44,10 +60,11 @@ HTML-код не менять, задание выполнять только в
 
 <body>
     <h1><a name="start">Михаил Ботвинник</a></h1>
-        <p class="date">Дата рождения: 17 августа 1911 г.</p>
-            <p class="champion">Чемпион мира: 1948-1957, 1958-1960, 1961-1963</p>
-                <a href="https://chesspro.ru/statistic/botvinnik.shtml" title="Михаил Ботвинник" target="_blank">Информация</a>
-                    <p class="info">С 1930-х гг. Ботвинник — лидер советских шахматистов: победы в чемпионате СССР (1939), в матче с В. Рагозиным
+    <p class="date">Дата рождения: 17 августа 1911 г.</p>
+    <p class="champion">Чемпион мира: 1948-1957, 1958-1960, 1961-1963</p>
+    <a href="https://chesspro.ru/statistic/botvinnik.shtml" title="Михаил Ботвинник" target="_blank">Информация</a>
+    <p class="info">С 1930-х гг. Ботвинник — лидер советских шахматистов: победы в чемпионате СССР (1939), в матче с В.
+        Рагозиным
         (1940), в матч-турнире за звание абсолютного чемпиона СССР (1941).<br /><br />
 
         В годы Великой Отечественной войны Ботвинник работал в Перми инженером-электриком. Победитель турнира мастеров в
@@ -64,10 +81,11 @@ HTML-код не менять, задание выполнять только в
         турнирной партии, всецело посвятив себя науке, подготовке докторской диссертации. </p>
 
     <h1>Анатолий Карпов</h1>
-        <p class="date">Дата рождения: 23 мая 1951 г.</p>
-            <p class="champion">Чемпион мира: 1975-1985</p>
-                <a href="https://chesspro.ru/statistic/karpov.shtml" target="_blank" title="Анатолий Карпов">Информация</a>
-                    <p class="info">В 1973 году победил на межзональном турнире в Ленинграде (1-2 места с Виктором Корчным) и в 1974 году успешно
+    <p class="date">Дата рождения: 23 мая 1951 г.</p>
+    <p class="champion">Чемпион мира: 1975-1985</p>
+    <a href="https://chesspro.ru/statistic/karpov.shtml" target="_blank" title="Анатолий Карпов">Информация</a>
+    <p class="info">В 1973 году победил на межзональном турнире в Ленинграде (1-2 места с Виктором Корчным) и в 1974
+        году успешно
         преодолел все ступени претендентских матчей — в четвертьфинале выиграл у Льва Полугаевского (3:0 без учёта
         ничьих),
         в полуфинале — у Бориса Спасского (4:1), в финале — у В. Л. Корчного (3:2). Начал усиленную подготовку к матчу с
@@ -82,7 +100,8 @@ HTML-код не менять, задание выполнять только в
         Уже
         в 1975 году он выиграл крупный турнир в Милане, а также ряд менее значительных соревнований (Манила,
         Ровинь-Загреб и
-        др.). В 1976, 1983 и 1988 годах Карпов выиграл чемпионаты СССР (в 1988 году — вместе с Гарри Каспаровым).<br /><br />
+        др.). В 1976, 1983 и 1988 годах Карпов выиграл чемпионаты СССР (в 1988 году — вместе с Гарри
+        Каспаровым).<br /><br />
 
         В 1978 и 1981 годах Карпов успешно отстоял свой титул в матчах с В. Л. Корчным. Сначала это был изнурительный
         матч в
@@ -97,10 +116,11 @@ HTML-код не менять, задание выполнять только в
         встречались Ботвинник и Смыслов).</p>
 
     <h1>Гарри Каспаров</h1>
-        <p class="date">Дата рождения: 13 апреля 1963 г.</p>
-            <p class="champion">Чемпион мира: 1985-1993</p>
-                <a href="https://chesspro.ru/statistic/kasparov.shtml" target="_blank" title="Анатолий Карпов">Информация</a>
-                    <p class="info">Первый матч за звание чемпиона мира по шахматам Гарри Каспаров играл против чемпиона мира Анатолия Карпова. До
+    <p class="date">Дата рождения: 13 апреля 1963 г.</p>
+    <p class="champion">Чемпион мира: 1985-1993</p>
+    <a href="https://chesspro.ru/statistic/kasparov.shtml" target="_blank" title="Анатолий Карпов">Информация</a>
+    <p class="info">Первый матч за звание чемпиона мира по шахматам Гарри Каспаров играл против чемпиона мира Анатолия
+        Карпова. До
         этого
         они в разных официальных соревнованиях сыграли три партии, которые закончились вничью. Для победы требовалось
         первым
