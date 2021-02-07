@@ -1,3 +1,5 @@
+/* Common */
+
 @font-face {
     font-family: Post No Bills Jaffna SemiBold;
     src: url('fonts/PostNoBillsJaffna-SemiBold.eot'),
@@ -12,10 +14,34 @@ body {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     color: #FFFFFF;
+    background-color: #242B33;
 }
 
 .clearfix::after {
     clear: both;
+}
+
+h1 {
+    color: #D4C17F;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 63, 98px;
+    text-align: center;
+    padding: 296px 0 100px;
+}
+
+h2 {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #D4C17F;
+    margin: 60px 0 50px;
+}
+
+.box {
+    margin: 0 auto;
+    width: 1110px;
 }
 
 /* Container 1 */
@@ -26,30 +52,12 @@ body {
     height: 840px;
 }
 
-h1 {
-    color: #D4C17F;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 63, 98px;
-    text-align: center;
-    padding: 296px 660px 435px;
-}
-
-h2 {
-    font-family: Playfair Display;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 48px;
-    color: #D4C17F;
-}
-
 .container1 .housevop {
-    padding: 30px 143px 0 405px;
+    padding: 30px 0 0;
     float: left;
 }
 
-.container1 .housevop p:first-child,
-.footer .housevop p:first-child {
+.housevop p:first-child {
     font-family: Post No Bills Jaffna SemiBold;
     font-weight: 600;
     font-size: 36px;
@@ -57,8 +65,7 @@ h2 {
     letter-spacing: 1.5px;
 }
 
-.container1 .housevop p:last-child,
-.footer .housevop p:last-child {
+.housevop p:last-child {
     font-family: Raleway;
     font-size: 12px;
     line-height: 14px;
@@ -69,18 +76,21 @@ h2 {
 
 .menu {
     float: right;
-    padding: 55px 0 0 0;
-    margin-right: 325px;
+    padding: 55px 0 0;
 }
 
 .menu p {
+    display: inline-block;
     font-family: Raleway;
     font-size: 14px;
     font-weight: 300;
     line-height: 16px;
     letter-spacing: 0.05em;
-    display: inline-block;
     padding-right: 40px;
+}
+
+.menu p:last-child {
+    padding-right: 0;
 }
 
 .menu p a {
@@ -91,13 +101,27 @@ h2 {
 .mouse {
     width: 23.53px;
     height: 40px;
-    margin: -300px auto 295px;
+    margin: 0 auto 200px;
     background: url('img/mouse.svg') no-repeat center;
 }
 
 .requisites {
-    margin: -100px 0 0 659.15px;
-    text-align: left;
+    text-align: center;
+    width: 580px;
+    margin: 0 auto;
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.requisites > div:first-child {
+    float: left;
+}
+
+.requisites > div:last-child {
+    float: left;
+    margin-left: 100px;
 }
 
 .mapicon {
@@ -106,22 +130,10 @@ h2 {
     width: 14.71px;
     padding-right: 18.15px;
     background: url(img/Vector2_1.png) no-repeat center,
-        url(img/Vector2.png) no-repeat center;
+                url(img/Vector2.png) no-repeat center;
 }
 
-.requisites span {
-    font-family: Raleway;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
-    display: inline-block;
-}
-
-.requisites span:first-child {
-    padding-right: 100px;
-}
-
-.requisites span img {
+.requisites > div:last-child img {
     padding-right: 15px;
 }
 
@@ -129,31 +141,7 @@ h2 {
 
 .container2 {
     width: 100%;
-    background-color: #242B33;
     height: 1226px;
-}
-
-.bonuses {
-    padding-left: 563px;
-}
-
-.bonuses div {
-    display: inline-block;
-    margin-right: 70px;
-    text-align: center;
-    font-family: Roboto;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 27px;
-}
-
-.bonuses div:nth-child(4) {
-    margin-right: 0;
-}
-
-.bonuses div img {
-    padding-top: 120px;
-    padding-bottom: 53px;
 }
 
 .count {
@@ -182,20 +170,41 @@ h2 {
     top: 1222px;
 }
 
+.bonuses {
+    text-align: center;
+}
+
+.bonuses div {
+    display: inline-block;
+    margin-right: 70px;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.bonuses div:nth-child(4) {
+    margin-right: 0;
+}
+.bonuses div img {
+    padding-top: 120px;
+    padding-bottom: 53px;
+}
+
 .container2 div h2 {
-    margin: 120px 1190px 85px 405px;
+    margin: 120px 0 100px;
 }
 
 .cell {
     width: 535px;
     height: 320px;
-    margin: 15px 15px 0 15px;
+    margin: 15px 10 0 15px;
     float: left;
 }
 
 .cell1 {
     background-image: url("img/loft1.png");
-    margin: 0 15px 0 405px;
+    margin: 0 40px 0 0;
 }
 
 .cell2 {
@@ -205,7 +214,7 @@ h2 {
 
 .cell3 {
     background-image: url("img/loft3.png");
-    margin: 0 15px 0 405px;
+    margin: 0 40px 0 0;
 }
 
 .cell4 {
@@ -230,7 +239,6 @@ h2 {
 }
 
 .container3 .lofts {
-    margin: 0 35px 180px 405px;
     padding-top: 180px;
     display: inline-block;
 }
@@ -312,7 +320,6 @@ button:hover {
 
 .container4 {
 width: 100%;
-background-color: #242B33;
 height: 1820px;
 }
 
@@ -336,7 +343,7 @@ top: 3419px;
 width: 719px;
 height: 650px;
 background: url("img/videoprewiew.png") no-repeat;
-margin: 0 406px 180px 595px;
+margin: 0 auto 0;
 }
 
 .video img {
@@ -345,26 +352,28 @@ margin-top: 275px;
 }
 
 .howtofind {
-margin: 0 405px 180px;
+margin: 180px 0 0;
 }
 
 .howtofind h2 {
-margin: 0 810px 100px 0;
+margin: 0 0 100px 0;
 }
 
 .howtofind .map {
 width: 1110px;
 height: 358px;
 background: url('img/map.png') no-repeat;
+margin-bottom: 180px;
 }
 
 .questions {
 width: 1110px;
-padding: 0 0 180px 405px;
+padding: 0 0 180px 0;
 }
 
 .questions h2 {
 padding-bottom: 50px;
+margin: 0;
 }
 
 .questions button, .questions input {
@@ -393,11 +402,9 @@ background-color: #2D343C;;
 .footer .housevop {
 width: 146px;
 height: 70px;
-padding-right: 154px;
 padding-top: 60px;
-padding-left: 405px;
 float: left;
-
+padding-right: 154px;
 }
 
 .foot {
