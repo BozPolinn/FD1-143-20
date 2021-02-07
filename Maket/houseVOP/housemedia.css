@@ -1,0 +1,321 @@
+/* Для экрана 1440px и менее*/
+
+@media all and (max-width: 1440px) {
+    /* Container 1 */
+    body,
+    .container1,
+    .container2,
+    .container3,
+    .container4,
+    .footer {
+        width: 1440px;
+    }
+
+    .container1 .housevop {
+        padding: 30px 143px 0 205px;
+    }
+
+    .menu {
+        margin-right: 165px;
+    }
+
+    h1 {
+        padding: 296px 0 435px;
+    }
+
+    .requisites {
+        margin: -75px auto 0 auto;
+    }
+
+    .requisites span:first-child {
+        padding: 0 320px 100px;
+    }
+
+    /* Container 2 */
+
+    .bonuses {
+        display: inline-block;
+        padding-left: 318px;
+    }
+
+    .count1 {
+        left: 1100px;
+    }
+
+    .count2 {
+        left: 0;
+        top: 1170px;
+    }
+
+    .container2 div h2 {
+        margin: 90px 0 85px 165px;
+    }
+
+    .cell1,
+    .cell3 {
+        margin: 0 15px 0 170px;
+    }
+
+    /* Container 3 */
+
+    .container3 .lofts {
+        margin: 0 35px 160px 165px;
+    }
+
+    .input {
+        left: 725px;
+    }
+
+    /* Container 4 */
+
+    .video {
+        margin: 1px auto 180px;
+    }
+
+    .count3 {
+        left: 990px;
+    }
+
+    .count4 {
+        left: 20px;
+        top: 3400px;
+    }
+
+    .howtofind {
+        margin: 0 0 180px;
+        padding-left: 165px;
+    }
+
+    .howtofind h2 {
+        margin: 0 0 100px 0;
+    }
+
+    .questions {
+        padding: 0 0 180px 165px;
+    }
+
+    /* Footer */
+
+    .footer .housevop {
+        padding-left: 165px;
+    }
+
+/* не удалить скобку */
+}
+
+/* Для экрана 1110px и менее*/
+
+@media all and (max-width: 1110px) {
+    /* Container 1 */
+    body,
+    .container1,
+    .container2,
+    .container3,
+    .container4,
+    .footer {
+        width: 1110px;
+    }
+
+    .container1 {
+        height: 650px;
+    }
+
+    .container1 .housevop,
+    .footer .housevop {
+        padding: 15px 0 15px 0;
+        text-align: center;
+        float: none;
+    }
+
+    .menu {
+        float: none;
+        padding: 30px 0 30px 270px;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 63, 98px;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .mouse {
+        margin: 50px auto 295px;
+    }
+
+    .requisites {
+        margin: -180px 0 0 -330px;
+        text-align: center;
+    }
+
+    .requisites span:first-child {
+        padding-right: 40px;
+    }
+
+    /* Container 2 */
+    .container2 {
+        height: 860px;
+    }
+
+
+    .bonuses {
+        padding-left: 210px;
+    }
+
+    .bonuses div {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .bonuses div img {
+        padding-top: 60px;
+        padding-bottom: 15px;
+        width: 60px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .container2 div h2 {
+        margin: 60px 0 15px 200px;
+    }
+
+    .table {
+        margin-left: 105px;
+    }
+
+    .cell {
+        width: 435px;
+        height: 260px;
+        margin: 15px 15px 0 15px;
+        float: left;
+    }
+
+    .cell p {
+        font-family: Raleway;
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 225px;
+    }
+
+    .count1 {
+        left: 800px;
+        top: 690px;
+    }
+
+    .count2 {
+        left: 0px;
+        top: 1150px;
+    }
+
+/* Container 3 */
+
+    .container3 {
+        height: 500px;
+    }
+
+    .container3 .lofts {
+        margin: 0 0 30px 200px;
+        padding-top: 60px;
+    }
+
+    .container3 div h2 {
+        margin-bottom: 30px;
+    }
+
+    .container3 .lofts p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .input {
+    left: 660px;
+    top: 1650px;
+    height: 270px;
+    width: 300px;
+    }
+
+    .input p, .qwe p {
+    margin-bottom: 35px;
+    }
+
+    /* Container 4 */
+
+    .container4 {
+        height: 1650px;
+    }
+
+    .count3 {
+        left: 690px;
+        top: 2050px;
+    }
+
+    .count4 {
+        left: 70px;
+        top: 2850px;
+    }
+
+    .video {
+        padding-top: 0;
+        margin: 0 auto 60px;
+    }
+
+    .howtofind {
+        margin: 0 0 60px 50px;
+    }
+
+    .howtofind h2 {
+        margin: 0 0 30px -10px;
+    }
+
+    .howtofind .map {
+        margin-left: -10px;
+        width: 720px;
+    }
+
+    .questions {
+        padding: 0 0 30px 0;
+    }
+
+    .questions h2 {
+        padding-left: 200px;
+        padding-bottom: 30px;
+    }
+
+    div.qwe {
+        width: 300px;
+        height: 300px;
+        padding-left: 200px;
+    }
+
+    .questions p {
+        margin: 0 0 35px;
+    }
+
+    .questions .look {
+        margin: 0 45px 30px 0;
+        }
+
+    .questions input {
+        margin: 0 30px 30px 0;
+        padding: 0;
+        vertical-align: middle;
+        float: none;
+    }
+
+    /* footer */
+
+    .footer {
+        height: 360px;
+    }
+
+    .footer .housevop {
+        padding: 30px 0 30px 200px;
+    }
+    .foot1 {
+    padding-left: 200px;
+    padding-top: 0px;
+    }
+}
