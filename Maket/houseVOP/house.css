@@ -42,6 +42,7 @@ h2 {
 .box {
     margin: 0 auto;
     width: 1110px;
+    height: 100%;
 }
 
 /* Container 1 */
@@ -241,6 +242,7 @@ h2 {
 .container3 .lofts {
     padding-top: 180px;
     display: inline-block;
+    float: left;
 }
 
 .container3 div h2 {
@@ -255,14 +257,11 @@ h2 {
 }
 
 .input {
-    margin: 0;
+    margin: 245px 0 0 31px;
     padding: 0;
-    display: inline-block;
-    position: absolute;
-    left: 975px;
-    top: 2311px;
     height: 135px;
-    width: 575px;
+    width: 544px;
+    float: left;
 }
 
 .input p, .qwe p {
@@ -284,8 +283,14 @@ input, button {
     border: none;
 }
 
-.container3 input, .container3 button {
+.container3 input:first-child {
     margin: 0 30px 35px 0;
+    padding: 0;
+}
+
+.container3 input:last-child,
+.container3 button  {
+    margin: 0 0 35px 0;
     padding: 0;
 }
 
