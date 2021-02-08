@@ -48,7 +48,7 @@ h2 {
 
 .container1 {
     width: 100%;
-    background-image: url(img/lounge_bg_title.png);
+    background: url(img/lounge_bg_title.png) no-repeat center top;
     height: 840px;
 }
 
@@ -158,7 +158,7 @@ h2 {
     position: absolute;
     width: 301px;
     height: 507px;
-    left: 1361px;
+    right: 258px;
     top: 764px;
 }
 
@@ -235,7 +235,7 @@ h2 {
 .container3 {
     width: 100%;
     height: 560px;
-    background-image: url('img/watchoffer.png');
+    background: url('img/watchoffer.png') center top no-repeat;
 }
 
 .container3 .lofts {
@@ -327,7 +327,7 @@ height: 1820px;
 position: absolute;
 width: 418px;
 height: 507px;
-left: 1302px;
+right: 200px;
 top: 2697px;
 }
 
