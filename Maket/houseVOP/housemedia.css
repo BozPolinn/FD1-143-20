@@ -309,13 +309,353 @@
             margin-right: 0;
             margin-left: 194px;
         }
-
-/* скобка! */
 }
 
-/* @media all and (max-width: ) {
+@media all and (max-width:500px) {
     
+   /* Common */
 
-     /* скобка! */
+   .box {
+    margin: 0 auto;
+    width: 320px;
+}
 
-/* }  */
+    h1 {
+        font-size: 26px;
+        padding: 70px 0 100px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .count1,
+    .count2,
+    .count3,
+    .count4 {
+        display: none;
+    }
+
+
+    /* Container 1 */
+
+    .container1 {
+        height: 650px;
+    }
+
+    .container1 .housevop {
+        padding: 30px 0 0;
+    }
+
+    .housevop p:first-child {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .housevop p:last-child {
+        font-size: 9px;
+    }
+
+    .menu {
+        padding: 35px 0 0;
+    }
+
+    .menu p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .mouse {
+        margin: 0 auto 100px;
+    }
+
+    .requisites {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .requisites > div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .requisites > div:first-child {
+        float: none;
+        margin-bottom: 5px;
+    }
+
+    .requisites > div:last-child {
+        margin-left: 0;
+    }
+
+    /* Container 2 */
+
+    .container2 {
+        height: 1270px;
+    }
+
+    .count1 {
+        right: 10px;
+        top: 530px;
+    }
+
+    .count2 {
+        left: 0;
+        top: 1500px;
+    }
+
+    .bonuses div {
+        font-size: 12px;
+        line-height: 20px;
+        height: 145px;
+    }
+
+    .bonuses div:last-child {
+        margin-right: 15px;
+    }
+
+    .bonuses div img {
+        padding: 30px 0 15px;
+    }
+
+    .cell {
+        width: 320px;
+        height: 191px;
+    }
+
+    .cell p {
+        padding-top: 150px;
+        font-size: 16px;
+    }
+
+    .container2 div h2,
+    .container3 div h2 {
+        margin: 30px 0 30px;
+    }
+
+    /* Container 3 */
+
+    .container3 .lofts {
+        padding-top: 0;
+        float: none;
+        margin-bottom: 30px;
+    }
+
+    .container3 .lofts p {
+        font-size: 9px;
+        line-height: 16px;
+    }
+
+    .input {
+        height: max-content;
+        float: none;
+        margin: 30px 0 30px;
+        width: 320px;
+        text-align: center;
+    }
+
+    .container3 input:first-child {
+        margin: 0 0 35px 0;
+        padding: 0;
+    }
+
+    .input > div {
+        height: max-content;
+    }
+
+    .input p {
+        margin: 0 0 30px 0;
+    }
+
+        /* Container 4 */
+
+    .container4 {
+        height: 950px;
+    }
+
+    .count3 {
+        top: 2300px;
+    }
+
+    .count4 {
+        top: 2900px;
+        left: 120px;
+    }
+
+    .video {
+        width: 320px;
+        height: 289px;
+    }
+
+    .video img {
+        width: 50px;
+        height: 50px;
+        margin: 119px 135px;
+    }
+
+    .howtofind {
+        margin: 30px 0 0;
+    }
+
+    .howtofind h2 {
+        margin: 0 0 30px 0;
+    }
+
+    .howtofind .map {
+        width: 320px;
+        margin-bottom: 30px;
+    }
+
+    .questions h2 {
+        padding-bottom: 30px;
+    }
+
+    .qwe {
+        height: 300px;
+        width: 320px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .qwe p {
+        margin-left: 0;
+    }
+
+    .qwe button,
+    .qwe input {
+        float: none;
+        margin-left: 0;
+    }
+
+    .questions {
+        width: 320px;
+        padding: 0;
+    }
+
+        /* Container 5 */
+
+        .footer {
+            height: 500px;
+        }
+
+        .footer .housevop {
+            padding-top: 30px;            float: none;
+        }
+
+        .footer .housevop p:last-child {
+            text-align: left;
+        }
+
+
+        .foot1 {
+            margin-right: 10px;
+            padding-top: 15px;
+        }
+
+        .foot2 {
+            padding-top: 15px;
+            margin-left: 60px;
+        }
+        
+        .foot3 {
+            margin: 0;
+            padding-top: 15px;
+        }
+} 
+
+@media all and (max-width:370px) {
+    
+    /* Common */
+ 
+    .box {
+     margin: 0 auto;
+     width: 80%;
+ }
+ 
+     h1 {
+         font-size: 22px;
+         padding: 70px 0 70px;
+     }
+ 
+     h2 {
+        font-size: 20px;
+    }
+ 
+        /* Container 1 */
+
+    .container1 {
+        height: 600px;
+    }
+
+    .mouse {
+        margin: 0 auto 70px;
+    }
+
+     .requisites {
+        font-size: 12px;
+    }
+
+        /* Container 2 */
+
+    .container2 {
+        height: 1100px;
+    }
+
+    .cell {
+        width: 100%;
+        height: 150px;
+    }
+
+    .cell p {
+        padding-top: 110px;
+        font-size: 14px;
+    }
+
+        /* Container 3 */
+
+    .container3 {
+        height: 670px;
+    }
+
+    .container3 .lofts p {
+        font-size: 8px;
+        line-height: 16px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+        /* Container 4 */
+
+    .container4 {
+        height: 900px;
+    }
+
+    .video {
+        width: 100%;
+        height: 289px;
+    }
+
+    .video img {
+        margin: 40%;
+    }
+
+    .howtofind .map {
+        width: 100%;
+        height: 100px;
+    }
+
+    .questions,
+    .qwe {
+        width: 100%;
+    }
+
+    /* Container 5 */
+
+    .foot2 {
+        padding-top: 15px;
+        margin-left: 10px;
+    }
+
+}
