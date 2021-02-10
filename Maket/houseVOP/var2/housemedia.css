@@ -1,0 +1,434 @@
+@media all and (max-width: 1200px) {
+    .box {
+        margin: 0 auto;
+        width: 800px;
+    }
+
+/* Container 2 */
+
+.container2 {
+    height: 1050px;
+}
+
+    .bonuses div {
+        margin-right: 65px;
+    }
+
+    .cell {
+        width: 380px;
+        height: 227px;
+    }
+
+    .cell p {
+        padding-top: 180px;
+    }
+
+    /* Container 3 */
+
+    .input {
+        margin: 185px 0 0 45px;
+        width: 255px;
+    }
+
+    .input > div {
+        width: 260px;
+        height: 170px;
+    }
+
+    .container3 button {
+        margin: 35px 0;
+        padding: 0;
+    }
+
+    .container3 .lofts p {
+        font-size: 15px;
+    }
+
+    /* Container 4 */
+
+    .howtofind {
+        margin: 120px 0 0;
+    }
+
+    .howtofind .map {
+        width: 800px;
+        height: 258px;
+        margin-bottom: 120px;
+    }
+
+    .questions {
+        width: 800px;
+        padding: 0 0 120px 0;
+    }
+
+    .qwe {
+        margin: 0 0 0 265px;
+        width: 255px;
+        height: 340px;
+    }
+
+    .questions p {
+        margin: 0 0 35px 0;
+    }
+
+    .questions button {
+        margin: 0;
+    }
+
+    .questions input {
+        margin: 35px 0 0 30px;
+    }
+
+    /* Container 5 */
+
+
+    .footer .housevop {
+        padding-right: 60px;
+    }
+
+    .foot {
+        font-size: 13px;
+    }
+
+    .foot1,
+    .foot2 {
+        margin-right: 60px;
+    }
+}
+
+@media all and (max-width: 960px) {
+
+/* Common */
+.box {
+    margin: 0 auto;
+    width: 86%;
+}
+
+h1 {
+    padding: 100px 0 100px;
+    font-size: 44px;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 60px 0 60px;
+}
+
+/* Container 1 */
+
+.container1 .housevop,
+.container1 .menu {
+    display: block;
+    float: none;
+    text-align: center;
+}
+
+.menu {
+    padding: 30px 0 0;
+}
+
+.requisites {
+    width: 100%;
+    text-align: center;
+}
+
+.requisites > div:first-child,
+.requisites > div:last-child {
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 0;
+}
+
+/* Container 2 */
+
+.container2 {
+    height: 1226px;
+}
+
+.bonuses {
+    width: 100%;
+}
+
+.bonuses div,
+.bonuses div:nth-child(4) {
+    width: 43%;
+    font-size: 18px;
+}
+
+.bonuses div:nth-child(odd) {
+    margin-right: 6%;
+}
+
+.bonuses div:nth-child(even) {
+    margin-right: 0;
+}
+
+.bonuses div img {
+    padding: 60px 0;
+}
+
+.container2 div h2,
+.container3 div h2,
+.container4 div h2 {
+    margin: 60px 0 60px;
+}
+
+.cell {
+    width: 47%;
+    margin: 0;
+}
+
+.cell1,
+.cell3 {
+    margin: 0 6% 0 0;
+}
+
+.cell3,
+.cell4 {
+    margin-top: 30px;
+}
+
+.cell p {
+    font-size: 20px;
+    padding-left: 10%;
+    padding-top: 190px;
+}
+
+/* Container 3 */
+
+.container3 .lofts {
+    padding-top: 0;
+    float: none;
+}
+
+.input {
+    margin: 30px 0 0;
+    width: 100%;
+}
+
+.input > div {
+    width: 100%;
+    height: 60px;
+}
+
+.container3 button {
+    padding: 0;
+}
+
+/* Container 4 */
+
+.container4 {
+    height: 1644px;
+}
+
+.video {
+    width: 100%;
+    background: url(img/videoprewiew.png) no-repeat center;
+}
+
+.video img {
+    margin: 0;
+    margin-top: calc(50% - 50px);
+    margin-left: calc(50% - 50px);
+}
+
+.howtofind {
+    margin: 0;
+}
+
+.howtofind .map {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.questions {
+    width: 100%;
+    padding: 0 0 60px 0;
+}
+
+.questions h2 {
+    padding: 0;
+}
+
+.qwe {
+    margin: 0 auto;
+}
+
+/* Container 5 */
+
+.footer {
+    width: 100%;
+    height: min-content;
+}
+
+.footer .housevop,
+.footer .foot {
+    margin: 0;
+    padding: 0;
+}
+
+.footer .housevop,
+.footer .foot {
+    display: block;
+    width: 100%;
+    float: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-bottom: #D4C17F 2px solid;
+}
+
+.footer .foot:last-child {
+    border-bottom: none;
+}
+
+}
+
+@media all and (max-width: 670px) {
+ 
+    /* Common */
+    
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .count1, .count2, .count3, .count4 {
+        display: none;
+    }
+
+    /* Container 1 */
+
+    .menu p {
+        display: block;
+        padding: 0 0 7.5px 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .mouse {
+        margin: 0 auto 150px;
+    }
+
+    /* Container 2 */
+
+    .container2 {
+        height: 1480px;
+    }
+
+    .bonuses div {
+        font-size: 16px;
+    }
+
+    .bonuses div img {
+        padding: 15px 0;
+    }
+
+    .container2 div h2, 
+    .container3 div h2, 
+    .container4 div h2 {
+        margin: 30px 0 30px;
+    }
+
+    .cell {
+        display: block;
+        width: 100%;
+        margin: 0 0 30px;
+        padding: 0;
+    }
+
+    .container2 .cell .cell4 {
+        margin: 0;
+    }
+
+    .cell p {
+        font-size: 18px;
+    }
+
+    /* Container 3 */
+
+    .container3 .lofts p {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .input { 
+        width: 255px;
+        height: 285px;
+        float: none;
+        margin: 30px auto 0;
+    }
+
+    .input > div {
+        height: 170px;
+        margin: 0 auto;
+    }
+
+    .container3 input:first-child,
+    .container3 input:last-child,
+    .container3 .input p {
+        margin-right: 0;
+    }
+
+    /* Container 4 */
+
+    .container4 {
+        height: 1450px;
+    }
+
+    .footer .foot li:last-child {
+        margin-bottom: 0;
+    }
+
+    .video {
+        height: 500px;
+    }
+
+    .video img {
+        width: 50px;
+        height: 50px;
+        margin-left: calc(50% - 25px);
+        margin-top: calc(50% - 25px);
+    }
+
+    /* Container 5 */
+
+}
+
+@media all and (max-width: 600px) {
+
+        /* Container 4 */
+
+    .container4 {
+        height: 1250px;
+    }
+
+    .video {
+        height: 400px;
+    }
+
+}
+
+@media all and (max-width: 400px) {
+
+    /* Container 3 */
+
+.container3 {
+    height: 650px;
+}
+
+    /* Container 4 */
+
+.container4 {
+    height: 1150px;
+}
+
+.video {
+    height: 300px;
+}
+
+}

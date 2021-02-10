@@ -1,0 +1,470 @@
+/* Common */
+
+@font-face {
+    font-family: Post No Bills Jaffna SemiBold;
+    src: url('fonts/PostNoBillsJaffna-SemiBold.eot'),
+         url('fonts/PostNoBillsJaffna-SemiBold.otf'),
+         url('fonts/PostNoBillsJaffna-SemiBold.svg'),
+         url('fonts/PostNoBillsJaffna-SemiBold.ttf'),
+         url('fonts/PostNoBillsJaffna-SemiBold.woff'),
+         url('fonts/PostNoBillsJaffna-SemiBold.woff2');
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #242B33;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+h1 {
+    color: #D4C17F;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 63, 98px;
+    text-align: center;
+    padding: 296px 0 100px;
+}
+
+h2 {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #D4C17F;
+    margin: 60px 0 50px;
+}
+
+.box {
+    margin: 0 auto;
+    width: 1110px;
+    height: 100%;
+}
+
+/* Container 1 */
+
+.container1 {
+    width: 100%;
+    background: url(img/lounge_bg_title.png) no-repeat center top;
+    height: 840px;
+}
+
+.container1 .housevop {
+    padding: 30px 0 0;
+    float: left;
+}
+
+.housevop p:first-child {
+    font-family: Post No Bills Jaffna SemiBold;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 1.5px;
+}
+
+.housevop p:last-child {
+    font-family: Raleway;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;            
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menu {
+    float: right;
+    padding: 55px 0 0;
+}
+
+.menu p {
+    display: inline-block;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    padding-right: 40px;
+}
+
+.menu p:last-child {
+    padding-right: 0;
+}
+
+.menu p a {
+    text-decoration: none;
+    color: #FFFFFF
+}
+
+.mouse {
+    width: 23.53px;
+    height: 40px;
+    margin: 0 auto 200px;
+    background: url('img/mouse.svg') no-repeat center;
+}
+
+.requisites {
+    text-align: center;
+    width: 580px;
+    margin: 0 auto;
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.requisites > div:first-child {
+    float: left;
+}
+
+.requisites > div:last-child {
+    float: left;
+    margin-left: 100px;
+}
+
+.mapicon {
+    display: inline-block;
+    height: 21px;
+    width: 14.71px;
+    padding-right: 18.15px;
+    background: url(img/Vector2_1.png) no-repeat center,
+                url(img/Vector2.png) no-repeat center;
+}
+
+.requisites > div:last-child img {
+    padding-right: 15px;
+}
+
+/* Container 2 */
+
+.container2 {
+    width: 100%;
+    height: 1226px;
+}
+
+.count {
+    font-family: Playfair Display;
+    font-weight: bold;
+    font-size: 400px;
+    line-height: 533px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.02;
+}
+
+.count1 {
+    position: absolute;
+    width: 301px;
+    height: 507px;
+    right: 258px;
+    top: 764px;
+}
+
+.count2 {
+    position: absolute;
+    width: 452px;
+    height: 507px;
+    left: 179px;
+    top: 1222px;
+}
+
+.bonuses {
+    text-align: center;
+}
+
+.bonuses div {
+    display: inline-block;
+    margin-right: 70px;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.bonuses div:nth-child(4) {
+    margin-right: 0;
+}
+.bonuses div img {
+    padding-top: 120px;
+    padding-bottom: 53px;
+}
+
+.container2 div h2 {
+    margin: 120px 0 100px;
+}
+
+.cell {
+    width: 535px;
+    height: 320px;
+    margin: 15px 10 0 15px;
+    float: left;
+}
+
+.cell1 {
+    background-image: url("img/loft1.png");
+    margin: 0 40px 0 0;
+}
+
+.cell2 {
+    background-image: url("img/loft2.png");
+    margin-top: 0;
+}
+
+.cell3 {
+    background-image: url("img/loft3.png");
+    margin: 0 40px 0 0;
+}
+
+.cell4 {
+    background-image: url("img/loft4.png");
+    margin-top: 0;
+}
+
+.cell p {
+    font-family: Raleway;
+    font-size: 24px;
+    line-height: 28px;
+    padding-top: 270px;
+    padding-left: 50px;
+}
+
+/* Container 3 */
+
+.container3 {
+    width: 100%;
+    height: 560px;
+    background: url('img/watchoffer.png') center top no-repeat;
+}
+
+.container3 .lofts {
+    padding-top: 180px;
+    display: inline-block;
+    float: left;
+}
+
+.container3 div h2 {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.container3 .lofts p {
+    font-family: Raleway;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.input {
+    margin: 245px 0 0 31px;
+    padding: 0;
+    height: 135px;
+    width: 544px;
+    float: left;
+}
+
+.input p, .qwe p {
+    display: inline-block;
+    width: 255px;
+    height: 30px;
+    margin-right: 30px;
+    font-family: Raleway;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: -40%;
+    color: #E7E7E7;
+}
+
+input, button {
+    width: 255px;
+    height: 50px;
+    border: none;
+}
+
+.container3 input:first-child {
+    margin: 0 30px 35px 0;
+    padding: 0;
+}
+
+.container3 input:last-child,
+.container3 button  {
+    margin: 0 0 35px 0;
+    padding: 0;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+input::placeholder {
+     text-align: center;
+     font-family: Raleway;
+     font-size: 14px;
+     line-height: 27px;
+     opacity: 1;
+     color: #FFFFFF;
+}
+
+button {
+    background-color: #D4C17F;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+button:hover {
+    box-shadow: 0px 0px 5px 0px rgba(212,193,127,1);
+}
+
+/* Container 4 */
+
+.container4 {
+width: 100%;
+height: 1820px;
+}
+
+.count3 {
+position: absolute;
+width: 418px;
+height: 507px;
+right: 200px;
+top: 2697px;
+}
+
+.count4 {
+position: absolute;
+width: 268px;
+height: 507px;
+left: 266px;
+top: 3419px;
+}
+
+.video {
+width: 719px;
+height: 650px;
+background: url("img/videoprewiew.png") no-repeat;
+margin: 0 auto 0;
+}
+
+.video img {
+margin-left: 310px;
+margin-top: 275px;
+}
+
+.howtofind {
+margin: 180px 0 0;
+}
+
+.howtofind h2 {
+margin: 0 0 100px 0;
+}
+
+.howtofind .map {
+width: 1110px;
+height: 358px;
+background: url('img/map.png') no-repeat;
+margin-bottom: 180px;
+}
+
+.questions {
+width: 1110px;
+padding: 0 0 180px 0;
+}
+
+.questions h2 {
+padding-bottom: 50px;
+margin: 0;
+}
+
+.questions button, .questions input {
+margin-right: 30px;
+padding: 0;
+vertical-align: middle;
+float: right;
+}
+
+.questions .look {
+margin: 0;
+}
+
+.questions p {
+margin-top: 10px;
+}
+
+/* Container 5 - footer */
+
+.footer {
+width: 100%;
+height: 272px;
+background-color: #2D343C;;
+}
+
+.footer .housevop {
+width: 146px;
+height: 70px;
+padding-top: 60px;
+float: left;
+padding-right: 154px;
+}
+
+.foot {
+display: inline-block;
+padding: 0;
+color: #ffffff;
+font-family: Raleway;
+font-size: 14px;
+letter-spacing: 0.05em;
+}
+
+.footer .foot ul li {
+list-style-type: none;
+margin-bottom: 15px;
+line-height: 16px;
+}
+
+.footerimg {
+display: inline-block;
+}
+
+.foot1 {
+margin-right: 167px;
+padding-top: 72px;
+}
+
+.foot2 {
+margin-right: 150px;
+}
+
+.foot3 span {
+color: #D4C17F;
+font-weight: bold;
+}
+
+#foot1 {
+width: 28.26px;
+height: 20px;
+padding-right: 17.74px;
+}
+
+#foot2 {
+width: 35.05px;
+height: 20px;
+padding-right: 22.54px;
+}
+
+#foot3 {
+width: 10,81px;
+height: 20px;
+padding-right: 21.59px;
+}
+
+.instagram {
+display: inline-block;
+width: 30px;
+height: 30px;
+}
