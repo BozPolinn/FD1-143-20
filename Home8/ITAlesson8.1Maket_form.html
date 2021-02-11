@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maket form</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" type="text/css" href="ITAlesson8.1Maket_form.css">
+    <link rel="stylesheet" type="text/css" href="ITAlesson8.1Maket_form_media.css">
+</head>
+
+<body>
+
+    <!-- + Переверстать проект MAKET_FORM. 
+         - Форма должна быть адаптивной:
+
+    + 1) на узком экране подписи полей должны быть выше полей, 
+    + 2) радиокнопки должны выстраиваться в столбик, 
+    + 3) текстовые поля должны растягиваться на всю доступную ширину;
+    + 4) на широком экране подписи полей должны быть фиксированной ширины (т.е. ширина подразумеваемого «столбца» с подписями полей должна быть фиксированной), 
+    + 5) текстовые поля должны растягиваться на всю оставшуюся ширину окна.
+
+        Вёрстка блочная, резиновая. 
+    +   CSS-функцию calc (кто знает о ней) не использовать.
+        Количество и положение точек перехода определить самостоятельно. -->
+
+    <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="_blank">
+        Для публикации вашей статьи заполните, пожалуйста, следующую форму:<br />
+
+        <div class="leftcol">Название статьи:</div>
+        <div class="entryfield">
+            <input type="text" placeholder="Введите название статьи" name="title" autofocus>
+        </div>
+
+
+        <div class="leftcol">Рубрика:</div>
+        <div class="entryfield">
+            <select>
+                <option value="comp_tech" class="var">компьютерная техника</option>
+                <option value="des_graph" class="var">графика и дизайн</option>
+                <option value="programming" class="var">программирование</option>
+            </select>
+        </div>
+
+
+        <div class="leftcol">Публикация:</div>
+        <div class="entryfield">
+            <div class="part">
+                <input type="radio" name="var[]">на сайте
+            </div>
+            <div class="part">
+                <input type="radio" name="var[]">в журнале
+            </div>
+            <div class="part">
+                <input type="radio" name="var[]">на сайте и в журнале
+            </div>
+        </div>
+
+        <div class="clearfix">
+            Разрешить комментарии:
+            <input type="checkbox" value="yes" name="comment" checked><br />
+        </div>
+
+        Текст статьи:<br />
+        <textarea placeholder="Введите текст статьи" name="article">
+        </textarea>
+
+        <input type="submit" value="Опубликовать">
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

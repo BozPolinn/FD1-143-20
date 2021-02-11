@@ -1,0 +1,40 @@
+    body {
+        margin: 2%;
+        padding: 2%;
+        border: red solid 1px;
+        line-height: 20px;
+         
+    }
+
+    span {
+        padding-bottom: 10px;
+    }
+
+    textarea,
+    input[type="text"] {
+        width: 100%;
+    }
+
+    input[type="radio"] {
+        margin: 0 5px;
+    }
+
+    .leftcol {
+        width: 200px;
+        float: left;
+    }
+
+    .entryfield {
+        width: calc(100% - 200px);
+        float: right;
+    }
+
+    .part {
+        float: left;
+        display: inline-block;
+    }
+
+    .clearfix {
+        clear: both;
+    }
+
