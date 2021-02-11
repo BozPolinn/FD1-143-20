@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../reset.css">
+    <link rel="stylesheet" href="../../../reset.css">
     <link rel="stylesheet" type="text/css" href="house.css">
     <link rel="stylesheet" type="text/css" href="housemedia.css">
 
@@ -135,13 +135,13 @@
             <div class="input">
                 <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="_blank">
                     <div class="reqs">
-                        <input placeholder="Ваше имя"></input>
-                        <input placeholder="Ваш телефон"></input>
+                        <input type='text' name="first_name" placeholder="Ваше имя"></input>
+                        <input type='text' name="your_phone" placeholder="Ваш телефон"></input>
                     </div>
                     <div>
                         <p>*Мы никому не передаем ваши данные.<br />
                             И не сохраняем ваш номер в базу.</p>
-                        <button>Посмотреть район</button>
+                        <input type='submit' name="addtobase" value='Посмотреть район' class="button">
                     </div>
                 </form>
             </div>
@@ -171,11 +171,13 @@
                     Есть вопросы?
                 </h2>
                 <div class="qwe">
-                    <p>*Мы никому не передаем ваши данные.<br />
-                        И не сохраняем ваш номер в базу.</p>
-                    <button class="look">Посмотреть район</button>
-                    <input placeholder="Ваш телефон"></input>
-                    <input placeholder="Ваше имя"></input>
+                    <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="_blank">
+                        <p>*Мы никому не передаем ваши данные.<br />
+                            И не сохраняем ваш номер в базу.</p>
+                        <input type='submit' name="addtobase" value='Посмотреть район' class="button look">
+                        <input type='text' name="your_phone" placeholder="Ваш телефон"></input>
+                        <input type='text' name="first_name" placeholder="Ваше имя"></input>
+                    </form>
                 </div>
             </div>
         </div>
@@ -231,11 +233,4 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
 </body>

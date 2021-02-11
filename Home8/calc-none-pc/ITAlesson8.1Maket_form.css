@@ -1,0 +1,37 @@
+    body {
+        margin: 2%;
+        padding: 2%;
+        border: red solid 1px;
+        line-height: 20px;
+         
+    }
+
+    textarea,
+    input[type="text"] {
+        width: 100%;
+    }
+
+    input[type="radio"] {
+        margin: 0 5px;
+    }
+
+    .leftcol {
+        width: 25%;
+        float: left;
+        clear: left;
+    }
+
+    .entryfield {
+        float: left;
+        width: 75%;
+    }
+
+    .part {
+        float: left;
+        display: inline-block;
+    }
+
+    .clearfix {
+        clear: both;
+    }
+

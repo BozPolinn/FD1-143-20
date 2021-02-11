@@ -1,0 +1,30 @@
+@media all and (max-width: 760px) {
+    .part {
+        float: none;
+        display: block;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .leftcol {
+        float: none;
+        display: block;
+    }
+
+    .entryfield {
+        width: 100%;
+        float: none;
+    }
+
+    .artname {
+        display: block;
+        width: 100%;
+    }
+
+    .namename,
+    .nameinput {
+        display: block;
+    }
+
+
+}

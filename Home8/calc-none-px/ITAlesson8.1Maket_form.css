@@ -6,8 +6,18 @@
          
     }
 
-    span {
-        padding-bottom: 10px;
+    .artname {
+        display: table;
+        width: 100%;
+    }
+
+    .namename,
+    .nameinput {
+        display: table-cell;
+    }
+
+    .namename {
+        width: 200px;
     }
 
     textarea,
@@ -22,11 +32,11 @@
     .leftcol {
         width: 200px;
         float: left;
+        clear: left;
     }
 
     .entryfield {
-        width: calc(100% - 200px);
-        float: right;
+        float: left;
     }
 
     .part {

@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maket form</title>
-    <link rel="stylesheet" href="../reset.css">
-    <link rel="stylesheet" type="text/css" href="ITAlesson8.1Maket_form.css">
-    <link rel="stylesheet" type="text/css" href="ITAlesson8.1Maket_form_media.css">
+    <link rel="stylesheet" href="../../reset.css">
+    <link rel="stylesheet" type="text/css" href="ITAlesson8.1Maket_form_calc.css">
+    <link rel="stylesheet" type="text/css" href="ITAlesson8.1Maket_form_media_calc.css">
 </head>
 
 <body>
@@ -23,17 +23,22 @@
     + 5) текстовые поля должны растягиваться на всю оставшуюся ширину окна.
 
         Вёрстка блочная, резиновая. 
-    +   CSS-функцию calc (кто знает о ней) не использовать.
-        Количество и положение точек перехода определить самостоятельно. -->
+        CSS-функцию calc (кто знает о ней) не использовать.
+    +   Количество и положение точек перехода определить самостоятельно. -->
 
     <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="_blank">
         Для публикации вашей статьи заполните, пожалуйста, следующую форму:<br />
 
-        <div class="leftcol">Название статьи:</div>
-        <div class="entryfield">
-            <input type="text" placeholder="Введите название статьи" name="title" autofocus>
+        <div class="construst">
+            <div class="leftcol">
+                <label for="form">
+                    Название статьи:
+                </label>
+            </div>
+            <div class="entryfield">
+                <input id="form" type="text" placeholder="Введите название статьи" name="title" autofocus>
+            </div>
         </div>
-
 
         <div class="leftcol">Рубрика:</div>
         <div class="entryfield">
