@@ -241,7 +241,7 @@ h2 {
 
 .container3 .lofts {
     padding-top: 180px;
-    display: inline-block;
+    display: block;
     float: left;
 }
 
