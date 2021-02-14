@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anketa</title>
+</head>
+
+<body>
+    <h1>Заполните анкету</h1>
+    <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="_blank">
+        <fieldset>
+            <legend>Личные данные</legend>
+            <label>
+                <input name="lastname" type="text" maxlength="25" placeholder="Фамилия" autofocus required>
+                Фамилия
+            </label>
+            <br />
+            <label>
+                <input name="firstname" type="text" maxlength="20" placeholder="Имя" required>
+                Имя
+            </label>
+            <br />
+            <label>
+                <input name="patronymic" type="text" maxlength="24" placeholder="Отчество" required>
+                Отчество
+            </label>
+            <br /><br />
+
+            <fieldset>
+                <legend>Паспортные данные</legend>
+                <label>
+                    <input name="seria" type="text" maxlength="2" min="2" placeholder="АА" required>
+                    Серия
+                </label>
+                <br />
+                <label>
+                    <input name="number" type="text" maxlength="7" min="7" placeholder="1234567" required >
+                    Номер паспорта
+                </label>
+            </fieldset>
+            <br />
+
+            <fieldset>
+                <legend>Дата рождения</legend>
+                <label>
+                    <input name="year" type="text" maxlength="4" min="4" placeholder="2000">
+                    Год рождения
+                </label>
+                <br />
+
+                <select name="month">
+                    <option value="01">Jan</option>
+                    <option value="02">Feb</option>
+                    <option value="03">Mar</option>
+                    <option value="04">Apr</option>
+                    <option value="05">May</option>
+                    <option value="06">Jun</option>
+                    <option value="07">Jul</option>
+                    <option value="08">Aug</option>
+                    <option value="09">Sept</option>
+                    <option value="10">Oct</option>
+                    <option value="11">Nov</option>
+                    <option value="12">Dec</option>
+                </select>
+                Месяц рождения
+                <br />
+
+                <label>
+                    <input name="data" type="text" maxlength="2" placeholder="01">
+                    День рождения
+                </label>
+                <br />
+
+            </fieldset>
+
+            <label><br />Национальность<br />
+                <select>
+                    <option value="belarus">РБ</option>
+                    <option value="other">Другое</option>
+                </select>
+            </label>
+            <br /><br />
+
+            Адрес:<br />
+            <textarea name="adress" style="resize: none;">
+            </textarea>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Интересы</legend>
+            <fieldset>
+                <legend>Хобби</legend>
+                <input type="checkbox" name="fishing" value="yes">Рыбалка<br />
+                <input type="checkbox" name="astronomy" value="yes">Астрономия<br />
+                <input type="checkbox" name="diving" value="yes">Дайвинг<br />
+                <input type="checkbox" name="stamps" value="yes">Марки<br />
+            </fieldset>
+
+            <fieldset>
+                <legend>Домашние животные</legend>
+                <select size=12 name="pet[]" multiple>
+                    <optgroup label="Попугаи">
+                        <option value="01">Волнистый</option>
+                        <option value="02">Ара</option>
+                        <option value="03">Неразлучник</option>
+                    </optgroup>
+                    <optgroup label="Рыба">
+                        <option value="04">Карась</option>
+                        <option value="05">Окунь</option>
+                        <option value="06">Осетр</option>
+                    </optgroup>
+                    <optgroup label="Птицы">
+                        <option value="07">Стая ворон</option>
+                        <option value="08">Аист</option>
+                        <option value="09">Археоптерикс</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend>Данные для входа и восстановления пароля</legend>
+            <label>
+                <input name="login" type="text" maxlength="20" min="5" placeholder="login">
+                Серия
+            </label>
+            <br />
+            <label>
+                <input name="password" type="text" maxlength="20" min="10" placeholder="password">
+                Номер паспорта
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Координаты:</legend>
+            <label>
+                <input name="email" type="text" placeholder="введите адрес почты">
+                Адрес почты
+            </label>
+            <br />
+            <label>
+                <input name="website" type="text" placeholder="введите адрес сайта">
+                Адрес сайта
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Цифры</legend>
+            <label>
+                <input name="count" type="number" placeholder="введите цифры" min="-2.5" max="2.5" step="0.1">
+                Цифры
+            </label>
+            <br /> <br />
+            <input name="count" type="range" min="0" max="10" step="1">
+        </fieldset>
+
+        <fieldset>
+            <legend>Кнопки управления</legend>
+            <input type="submit" name="Отправить">
+            <input type="submit" name="Сбросить">
+        </fieldset><br /> <br />
+        <button style="background: url('img/button.png') center no-repeat; width: 50px; height: 50px;">
+
+        </button>
+
+    </form>
+</body>
+
+</html>
