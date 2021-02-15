@@ -35,7 +35,6 @@
                     <input name="seria" type="text" maxlength="2" min="2" placeholder="АА" required>
                     Серия
                 </label>
-                <br />
                 <label>
                     <input name="number" type="text" maxlength="7" min="7" placeholder="1234567" required >
                     Номер паспорта
@@ -52,6 +51,7 @@
                 <br />
 
                 <select name="month">
+                    <option value="00">Не выбрано</option>
                     <option value="01">Jan</option>
                     <option value="02">Feb</option>
                     <option value="03">Mar</option>
@@ -69,15 +69,17 @@
                 <br />
 
                 <label>
-                    <input name="data" type="text" maxlength="2" placeholder="01">
+                    <input name="data" type="number" min="1" max="31" step="1" placeholder="01">
                     День рождения
                 </label>
-                <br />
 
             </fieldset>
+            <br />
 
-            <label><br />Национальность<br />
-                <select>
+
+            <label>Национальность<br />
+                <select name="nation" required>
+                    <option value="nochoose">Не выбрано</option>
                     <option value="belarus">РБ</option>
                     <option value="other">Другое</option>
                 </select>
@@ -125,12 +127,12 @@
         <fieldset>
             <legend>Данные для входа и восстановления пароля</legend>
             <label>
-                <input name="login" type="text" maxlength="20" min="5" placeholder="login">
+                <input name="login" type="text" maxlength="20" min="5" placeholder="login" required>
                 Серия
             </label>
             <br />
             <label>
-                <input name="password" type="text" maxlength="20" min="10" placeholder="password">
+                <input name="passport" type="text" maxlength="20" min="10" placeholder="password" required>
                 Номер паспорта
             </label>
         </fieldset>
