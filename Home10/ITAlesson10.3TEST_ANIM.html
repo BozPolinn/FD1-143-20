@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header,
+        .footer {
+            display: block;
+            font-size: 36px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+            color: #005662;
+            background-color: #e0f2f1;
+            padding: 20px;
+        }
+
+        h3 {
+            display: block;
+            width: 100%;
+            font-size: 28px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #00867d;
+            padding: 20px 0;
+            margin: 0 auto;
+        }
+
+        .common {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rules {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 300;
+            background-color: #ffffff;
+            color: #78909c;
+        }
+
+        .label {
+            padding: 0 0 20px;
+            font-weight: 700;
+        }
+
+        @keyframes LabInstr {
+            from {
+                color: #78909c;
+            }
+
+            50% {
+                color: #fb8c00;
+            }
+
+            to {
+                color: #78909c;
+            }
+        }
+
+        #LabInstr {
+            animation: LabInstr 5s infinite;
+        }
+
+        .animated {
+            display: flex;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 300;
+            background-color: #e4e4e4;
+            color: #29434e;
+            justify-content: space-evenly;
+        }
+
+        .mini_anim {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            flex-basis: 30%;
+            background-color: #ccc0ae;
+            margin: 2% 0;
+            border: 5px solid #fbe9e7;
+        }
+
+        .mini_anim:first-child {
+            background-image: repeating-linear-gradient(70deg, #f1a1bf, #f1a1bf, #ffe3f2, #ffe3f2, #c5cae9, #c5cae9, #f1a1bf, #f1a1bf);
+            background-position: 0 0;
+            animation: grad1 15s infinite alternate;
+            transition-timing-function: ease-in-out;
+            background-size: 160%;
+        }
+
+        @keyframes grad1 {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: 1000px 0;
+            }
+        }
+
+        .mini_anim:nth-child(2) {
+            background-image: repeating-linear-gradient(319.5deg, #ffafaf 10%, #fff3e0 20%, #f7c4b5 30%, #ffafaf 40%);
+            animation: grad2 15s infinite alternate;
+            transition-timing-function: ease-in-out;
+            background-size: 800px;
+            overflow: hidden;
+        }
+
+        @keyframes grad2 {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: 0 500px;
+            }
+        }
+
+        .mini_anim:last-child {
+            background-image: repeating-radial-gradient(circle at 25% center, #007c91, #b2dfdb 40%, #fffde7);
+            background-size: 150%;
+            animation: grad3 5s infinite alternate;
+            transition-timing-function: ease-in-out;
+            overflow: hidden;
+        }
+
+        @keyframes grad3 {
+            from {
+                background-size: 150%;
+            }
+
+            to {
+                background-size: 100%;
+            }
+        }
+
+        .content {
+            width: 80%;
+            height: 80%;
+            background: #ffffffaf;
+            font-size: 17px;
+        }
+
+        .animated:hover #content1 {
+            transform: rotate(360deg) scale(1.25);
+            transform-origin: center bottom;
+            transition-duration: 1s;
+            animation: content1 20s 1;
+        }
+
+        .animated:hover #content2 {
+            transform: skew(10deg, 15deg) translate(0px, 600px);
+            transform-origin: center bottom;
+            transition-duration: 5s;
+        }
+
+        .animated:hover #content3 {
+            transform: rotate3d(1, 1, 1, 360deg);
+            transition-timing-function: ease-in-out;
+            transition-duration: 5s;
+            animation: rotate 5s infinite alternate;
+            backface-visibility: hidden;
+        }
+
+        @keyframes rotate {
+            50% {
+                transform: none;
+            }
+        }
+        
+    </style>
+</head>
+
+<!-- + Веб-страница должна содержать контейнер (элемент div), 
+    внутри которого расположено несколько элементов различного цвета, формы и т.д. (тоже могут быть элементами div).
+    
+    + Один из элементов должен быть постоянно анимирован (анимировать можно любое стилевое свойство, 
+    которое поддерживает анимацию).
+
+    При поднесении мыши к любой точке контейнера (даже вне элементов) сразу несколько неподвижных элементов должны
+    анимироваться различными способами (т.е. у одного элемента может меняться расположение, у другого — фоновый цвет, у
+    третьего — толщина рамки и т.д.). -->
+
+<body>
+
+    <div class="common">
+
+        <div class="header">
+            Animation
+        </div>
+
+        <div class="rules">
+            <h3>Инструкция</h3>
+            <div class="label" id="LabInstr">Для просмотра анимации наведите мышкой на блок ниже:</div>
+        </div>
+
+        <div class="animated">
+            <div class="mini_anim" id="grad1">
+                <div class="content" id="content1">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </div>
+            </div>
+            <div class="mini_anim" id="grad2">
+                <div class="content" id="content2">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                    a galley of type and scrambled it to make a type specimen book.
+                </div>
+            </div>
+            <div class="mini_anim" id="grad3">
+                <div class="content" id="content3">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                    a galley of type and scrambled it to make a type specimen book.
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Спасибо за внимание!
+        </div>
+    </div>
+</body>
+
+</html>
