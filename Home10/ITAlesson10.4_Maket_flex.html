@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearningFlex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 20px;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header, .footer {
+            background-color: #fde8cd;
+            color: #433520;
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 20px;
+        }
+
+        .content {
+            display: flex;
+            background-color: #ffffff;
+            flex-direction: row;
+            color: #433520;
+        }
+
+        .menu {
+            flex-basis: 200px;
+            min-width: 200px;
+            background-color: #00917c;
+        }
+
+        .menu a {
+            color: #dfe0df;
+            text-decoration: none;
+        }
+
+        .menu ul {
+            list-style-type: disc;
+            margin: 15px 15px 15px 30px;
+            color: #dfe0df;
+        }
+
+        .banner {
+            background: url(img/ballwall.png) right top repeat-y;
+            margin: 15px 15px 15px 30px;
+            text-align: justify;
+        }
+
+        img {
+            width: 30%;
+            float: left;
+            margin: 0 15px 15px 0;
+        }
+
+        @media all and (max-width: 770px) {
+            * {
+            font-size: 14px;
+            }
+
+            .header, .footer {
+            font-size: 20px;
+            }
+            
+            .content {
+                flex-direction: column-reverse;
+                background-color: #fff;
+            }
+            
+            .menu {
+                flex-basis: 100%;
+                background-color: #fff;
+            }
+
+            .menu a, .menu ul {
+                color: #00917c;
+                text-align: center;
+            }
+
+            .menu ul li {
+                display: inline;
+                list-style-type: none;
+                margin: 5px;
+            }
+
+            .menu ul li:first-child {
+                margin-left: 0;
+            }
+
+            .menu ul li:last-child {
+                margin-right: 0;
+            }
+
+            .banner {
+                flex-basis: 100%;
+                margin: 0;
+                padding: 15px;
+                background: #ffffff;
+            }
+
+            img {
+                width: 100%;
+            }
+
+
+            /* ! скобка */
+        }
+
+
+    </style>
+</head>
+
+<!-- + Создать новый проект MAKET_FLEX (за основу можно взять MAKET_DIV либо MAKET_ADAPT). 
+     + Сверстать по макету резиновой блочной адаптивной вёрсткой с использованием flex-блоков.
+     + В широком варианте ширина колонки с меню должна быть фиксированной.
+     + В узком варианте меню должно опускаться ниже контента и растягиваться на всю доступную ширину, 
+     + изображение также должно растягиваться на всю доступную ширину.
+     + Фон меню должен задаваться цветом, а не фоновым изображением.
+        Макет широкой вёрстки (слева) — в библиотечном файле football_w.png,
+        макет узкой вёрстки (справа) — в библиотечном файле football_n.png.
+     + Гиперссылки могут вести куда угодно. Тексты могут быть произвольными -->
+
+<body>
+    <div class="box">
+        <div class="header">Привет участникам соревнований!</div>
+
+        <div class="content">
+            <div class="menu">
+                <ul>
+                    <li><a
+                            href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">конькобежный
+                            спорт</a></li>
+                    <li><a
+                            href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">биатлон</a>
+                    </li>
+                    <li><a
+                            href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">футбол</a>
+                    </li>
+                    <li><a
+                            href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">стрельба
+                            из лука</a></li>
+                    <li><a
+                            href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">прыжки
+                            в длину</a></li>
+                    <li><a
+                            href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">прыжки
+                            в высоту</a></li>
+                    <li><a
+                            href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">фигурное
+                            катание</a></li>
+                    <li><a
+                            href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">синхронное
+                            плавание</a></li>
+                    <li><a
+                            href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">шахматы</a>
+                    </li>
+                    <li><a
+                            href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">шашки</a>
+                    </li>
+                </ul>
+            </div> 
+
+            <div class="banner">
+                <picture>
+                    <source srcset="img/foorball.jpg" media="(max-width: 800px)" />
+                    <source srcset="img/football230px2.jpg" media="(max-width: 500px)" />
+                    <img class="img" src="img/football.jpg" alt="football" title="football">
+                </picture>
+                Футбол — командный вид спорта, в котором целью является забить мяч в ворота соперника ногами
+                или другими частями тела (кроме рук) большее количество раз, чем
+                команда соперника. В настоящее время самый популярный и массовый вид спорта в мире. <br />
+
+                Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов. Эти
+                правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для таких
+                групп, как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями. Законы очень
+                часто формулировались в общих чертах, которые позволяют упростить их применения в зависимости от
+                характера игры. Правила игры публикуются в ФИФА, но поддерживаются Международным советом футбольных
+                ассоциаций.
+            </div>
+        </div>
+
+        <div class="footer">Главное не победа, а участие!</div>
+    </div>
+</body>
+
+</html>

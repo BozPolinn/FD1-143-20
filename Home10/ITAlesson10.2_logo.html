@@ -6,19 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masterclass</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <style>
+        /* common */
         body {
             background-color: #f5f4f4;
             margin: 0;
             padding: 0;
             color: #00303f;
         }
-
+        h1 {
+            text-align: center;
+            font-size: 43px;
+            letter-spacing: 0.05em;
+            text-align: center;
+            font-variant: small-caps;
+        }
+        h2 {
+            margin-left: 55px;
+            margin-bottom: 10px;
+            font-size: 38px;
+            letter-spacing: 0.05em;
+            font-variant: small-caps;
+            text-align: center;
+        }
+        h3 {
+            position: absolute;
+            top: 25px;
+            padding: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
         a {
             text-decoration: none;
             color: #4b4b4b;
         }
-
         label {
             margin-left: 55px;
             margin-right: 55px;
@@ -27,203 +50,47 @@
             border-radius: 5px;
             background-color: white;
         }
-
-        .label2 {
-            padding: 10px 50px;
-        }
-
-        .label3 {
-            padding: 10px 45px;
-        }
-
-        .label1:hover,
-        .label2:hover,
-        .label3:hover {
-            box-shadow: 0px 0px 5px 2px rgb(204, 204, 204);
-        }
-
-        #strelka {
-            width: 40px;
-            position: relative;
-            top: 15px;
-            left: 25px;
-        }
-
-        .person {
-            float: left;
-            position: relative;
-            width: 28%;
-            height: 500px;
-            margin: 2.5%;
-            padding: 0;
-            background-color: #cae4db;
-        }
-
-        .photo {
-            background: url("img/photo-1556908153-a685b0352d59.jfif") center no-repeat;
-            width: 80%;
-            height: 70%;
-            position: absolute;
-            top: 15%;
-            left: 10%;
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 43px;
-            letter-spacing: 0.05em;
-            text-align: center;
-            font-variant: small-caps;
-        }
-
-        h2 {
-            margin-left: 55px;
-            margin-bottom: 0;
-            font-size: 38px;
-            letter-spacing: 0.05em;
-            font-variant: small-caps;
-            text-align: center;
-        }
-
-        h3 {
-            position: absolute;
-            top: 25px;
-            padding: 20px;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-
-        .charact {
-            position: absolute;
-            top: 100px;
-            padding: 20px;
-            color: #ffffff;
-        }
-
-        input.personalbutton+div.teachers {
-            display: none;
-        }
-
-        input.personalbutton:checked+div.teachers {
-            display: block;
-        }
-
         hr {
             margin: 20px 0;
             color: #c4c4c4;
         }
 
-        .press {
-            margin: 0px 0 0 35px;
+        /* SVG */
+        .partners {
+            text-align: center;
+        }
+        svg {
+            transition: 0.5s transform;
+        }
+        svg:hover {
+            transform: scale(1.3);
+        }
+        ellipse:hover {
+            fill: url('#LG2');
+            opacity: 0.5;
+            stroke: #004c40;
+        }
+        #svg_1:hover {
+            fill:rgb(189, 184, 177);
+        }
+        #svg_2:hover {
+            fill:#bf360c;
+            stroke: #870000;
+        }
+        #svg_5:hover {
+            fill: #ffeb3b;
         }
 
-        input.press:after {
-            content: url(img/heart1.png);
-            position: relative;
-            top: -5px;
-            left: -10px;
-        }
-
-        input.press:checked:after {
-            content: url(img/heart2.png);
-            position: relative;
-            top: -5px;
-            left: -10px;
-        }
-
-        .menu {
-            margin-top: 30px;
-        }
-
-        .menu p {
-            margin-left: 55px;
-            font-size: 32px;
-            letter-spacing: 0.1em;
-            font-variant: small-caps;
-        }
-
-        ul {
-            list-style-type: circle;
-            font-size: 30px;
-            font-style: italic;
-        }
-
-        #menu1,
-        #menu2,
-        div.list {
-            display: none;
-        }
-
-        input.menubox1:checked+label+div {
-            display: block;
-        }
-
-        input.menubox1:checked+label {
-            display: none;
-        }
-
-        input.menubox1+label+div+input+label {
-            display: none;
-        }
-
-        input.menubox1:checked+label+div+input+label {
-            display: inline-block;
-        }
-
-        #menu3,
-        #menu4,
-        div.list2 {
-            display: none;
-        }
-
-        input.menubox2:checked+label+div {
-            display: block;
-        }
-
-        input.menubox2:checked+label {
-            display: none;
-        }
-
-        input.menubox2+label+div+input+label {
-            display: none;
-        }
-
-        input.menubox2:checked+label+div+input+label {
-            display: inline-block;
-        }
-
-        #menu5,
-        #menu6,
-        div.list3 {
-            display: none;
-        }
-
-        input.menubox3:checked+label+div {
-            display: block;
-        }
-
-        input.menubox3:checked+label {
-            display: none;
-        }
-
-        input.menubox3+label+div+input+label {
-            display: none;
-        }
-
-        input.menubox3:checked+label+div+input+label {
-            display: inline-block;
-        }
-
+        /* Headermenu */
         div.content1 {
             margin: 0 auto;
-            padding: 40px 0;
+            padding: 20px 0;
             font-size: 26px;
             text-align: center;
             background-color: white;
             color: #c4c4c4;
         }
-
-        div.content1 > div {
+        div.content1>div {
             display: inline-block;
             width: 15%;
             color: #c4c4c4;
@@ -236,21 +103,17 @@
             left: 0;
             cursor: pointer;
         }
-
-        div.content1 > div:hover {
+        div.content1>div:hover {
             border: 1px solid #c4c4c4;
         }
-
-        div.content1 > div:hover > a {
+        div.content1>div:hover>a {
             color: #c56000;
             font-weight: 700;
         }
-
         a[href]:hover {
             color: #c56000;
             font-weight: 700;
         }
-
         div.content2 {
             display: none;
             width: 100%;
@@ -258,12 +121,10 @@
             border: 1px solid #c4c4c4;
             font-size: 20px;
         }
-
-        div.content2 > div {
+        div.content2>div {
             padding: 10px 0;
             background-color: rgb(255, 255, 255);
         }
-
         div.content1 div.name:hover div.content2.namechild,
         div.content1 div.variant:hover div.content2.variantchild {
             display: block;
@@ -273,35 +134,158 @@
             border-top: 0;
         }
 
+        /* Part1-Cookers */
+        .label2 {
+            padding: 10px 50px;
+        }
+        .label3 {
+            padding: 10px 45px;
+        }
+        .label1:hover,
+        .label2:hover,
+        .label3:hover {
+            box-shadow: 0px 0px 5px 2px rgb(204, 204, 204);
+        }
+        #strelka {
+            width: 40px;
+            position: relative;
+            top: 15px;
+            left: 25px;
+        }
+        .person {
+            float: left;
+            position: relative;
+            width: 28%;
+            height: 500px;
+            margin: 2.5%;
+            padding: 0;
+            background-color: #cae4db;
+        }
+        .photo {
+            background: url("img/photo-1556908153-a685b0352d59.jfif") center no-repeat;
+            width: 80%;
+            height: 70%;
+            position: absolute;
+            top: 15%;
+            left: 10%;
+        }
+        .charact {
+            position: absolute;
+            top: 100px;
+            padding: 20px;
+            color: #ffffff;
+        }
+        input.personalbutton+div.teachers {
+            display: none;
+        }
+        input.personalbutton:checked+div.teachers {
+            display: block;
+        }
+
+        /* Menu */
+        .press {
+            margin: 0px 0 0 35px;
+        }
+        input.press:after {
+            content: url(img/heart1.png);
+            position: relative;
+            top: -5px;
+            left: -10px;
+        }
+        input.press:checked:after {
+            content: url(img/heart2.png);
+            position: relative;
+            top: -5px;
+            left: -10px;
+        }
+        .menu {
+            margin-top: 30px;
+        }
+        .menu p {
+            margin-left: 55px;
+            font-size: 32px;
+            letter-spacing: 0.1em;
+            font-variant: small-caps;
+        }
+        ul {
+            list-style-type: circle;
+            font-size: 30px;
+            font-style: italic;
+        }
+        #menu1,
+        #menu2,
+        div.list {
+            display: none;
+        }
+        input.menubox1:checked+label+div {
+            display: block;
+        }
+        input.menubox1:checked+label {
+            display: none;
+        }
+        input.menubox1+label+div+input+label {
+            display: none;
+        }
+        input.menubox1:checked+label+div+input+label {
+            display: inline-block;
+        }
+        #menu3,
+        #menu4,
+        div.list2 {
+            display: none;
+        }
+        input.menubox2:checked+label+div {
+            display: block;
+        }
+        input.menubox2:checked+label {
+            display: none;
+        }
+        input.menubox2+label+div+input+label {
+            display: none;
+        }
+        input.menubox2:checked+label+div+input+label {
+            display: inline-block;
+        }
+        #menu5,
+        #menu6,
+        div.list3 {
+            display: none;
+        }
+        input.menubox3:checked+label+div {
+            display: block;
+        }
+        input.menubox3:checked+label {
+            display: none;
+        }
+        input.menubox3+label+div+input+label {
+            display: none;
+        }
+        input.menubox3:checked+label+div+input+label {
+            display: inline-block;
+        }
         .table {
             position: relative;
             height: 190px;
         }
-
-        .table > input {
+        .table>input {
             display: none;
-        }   
-
-        .table > label {
+        }
+        .table>label {
             float: left;
             background-color: rgb(189, 184, 177);
             margin: 0 20px;
         }
-
-        .table > label:first-child {
+        .table>label:first-child {
             margin-left: 55px;
         }
-
-        input:checked + label {
+        input:checked+label {
             background-color: rgb(255, 224, 246);
         }
-
         div.annotation {
             display: none;
             width: 483px;
         }
-
-        input:checked + label + div.annotation {
+        input:checked+label+div.annotation {
             display: block;
             position: absolute;
             top: 38px;
@@ -312,7 +296,6 @@
             border: 1px solid rgb(189, 184, 177);
             border-top: none;
         }
-
     </style>
 </head>
 
@@ -338,6 +321,49 @@
 
         <div>Контакты</div>
     </div>
+
+    <div class="partners">
+        <h2>Наши партнеры</h2>
+        <a href="https://www.relax.by/" target="_blank">
+            <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+                <g id="Layer_1">
+                    <title>Layer 1</title>
+                    <ellipse fill="url('#LG1')" stroke-width="null" stroke-dasharray="null" opacity="0.2" cx="148.5" cy="146.33333" id="svg_4" rx="72" ry="73" stroke="#000000"/>
+                    <linearGradient id='LG1' gradientTransform='rotate(10)'>
+                      <stop offset='0%' stop-color="#ba2d65" />
+                      <stop offset='50%' stop-color="#9575cd" />
+                      <stop offset='100%' stop-color="#00766c" />
+                    </linearGradient>
+                    <linearGradient id='LG2' gradientTransform='rotate(10)'>
+                        <stop offset='0%' stop-color="#ffeb3b" />
+                        <stop offset='50%' stop-color="#ff5722" />
+                        <stop offset='100%' stop-color="#2196f3" />
+                      </linearGradient>
+                    <!-- <radialGradient id='LG3' gradientUnits="userSpaceOnUse" spreadMethod="reflect" r="20%">
+                        <stop offset="0%" stop-color="#bf360c" />
+                        <stop offset="50%" stop-color="#33691e" />
+                        <stop offset="100%" stop-color="#0d47a1" />
+                    </radialGradient> -->
+                    <!-- <pattern id='LG4' width=10 height=10 patternUnits=userSpaceOnUse patternTransform='rotate(15)'>
+                        <polygon points='5,0 10,10 0,10' stroke=red fill=yellow />
+                    </pattern> -->
+
+                    <text font-style="normal" font-weight="normal" xml:space="preserve" text-anchor="start"
+                        font-family="'Great Vibes'" font-size="25" id="svg_1" y="236.33333" x="160.68608"
+                        opacity="undefined" stroke-dasharray="null" fill="#000000">great pleasure</text>
+                    <text stroke="#000000" xml:space="preserve" text-anchor="start" font-family="'Great Vibes'"
+                        font-size="60" id="svg_2" y="173.39716" x="27.91384" opacity="undefined" fill-opacity="null"
+                        stroke-dasharray="null" stroke-width="null" fill="#000000">YourCakes</text>
+                    <path stroke="#192826" id="svg_5"
+                        d="m267.45746,171.90251l6.5808,0c0.94858,-0.00151 1.59571,-0.68638 1.59255,-1.39097l0,-0.47376c1.87806,-0.00127 3.24063,-1.21167 3.23992,-2.62307c0.0007,-1.43653 -1.33511,-2.61674 -2.88996,-2.61572l-10.14352,0l0,5.71267c0.00147,0.77576 0.77981,1.38946 1.62021,1.39085zm8.17314,-6.02895l0,0l0.34996,0c1.28667,-0.00175 1.6994,1.04286 1.69322,1.54899c0.00126,0.81722 -0.70378,1.601 -2.04318,1.52494l0,-3.07393zm-13.41959,6.37681c0.00119,1.05594 0.93889,1.54561 1.69364,1.54863l13.613,0c0.90028,-0.00301 1.68936,-0.61069 1.69336,-1.54863l-17,0z"
+                        opacity="undefined" fill-opacity="null" stroke-opacity="null" stroke-dasharray="null"
+                        stroke-width="null" fill="#666666" />
+                </g>
+            </svg>
+        </a>
+    </div>
+
+    <hr>
 
     <h1>Наши повара проводят кулинарные мастер-классы</h1>
     <div>
@@ -383,7 +409,7 @@
         </div>
     </div>
 
-        <hr>
+    <hr>
 
     <h2><a name="schedule">Расписание</a></h2>
     <div class="table">
@@ -404,90 +430,90 @@
         <div class="annotation">
             Мастер-класс "Украинская кухня" проходит каждый понедельник в 19.00
         </div>
-    </div> 
+    </div>
 
-        <hr>
+    <hr>
 
-        <div>
-            <h2><a name="menulist">Меню</a></h2>
-        </div>        
-        <div class="menu">
-            <p><a name="menulist1">Итальянское меню</a></p>
+    <div>
+        <h2><a name="menulist">Меню</a></h2>
+    </div>
+    <div class="menu">
+        <p><a name="menulist1">Итальянское меню</a></p>
 
-            <input class="menubox1" id="menu1" type="radio" name="menu" value="1">
+        <input class="menubox1" id="menu1" type="radio" name="menu" value="1">
 
-            <label class="label3" for="menu1">
-                Показать
-            </label>
+        <label class="label3" for="menu1">
+            Показать
+        </label>
 
 
-            <div class="list">
-                <ul>
-                    <li>Палтус в сливочном соусе</li>
-                    <li>Лазанья с пряным болоньезе</li>
-                    <li>Тортилья</li>
-                </ul>
-            </div>
-
-            <input class="menubox1" id="menu2" type="radio" name="menu" value="2">
-
-            <label class="label3" for="menu2">
-                Скрыть
-            </label>
-
-            <p><a name="menulist2">Японское меню</a></p>
-
-            <input class="menubox2" id="menu3" type="radio" name="menu" value="1">
-
-            <label class="label3" for="menu3">
-                Показать
-            </label>
-
-            <div class="list2">
-                <ul>
-                    <li>Роллы Филадельфия</li>
-                    <li>Суп Том-ям</li>
-                    <li>Сладкие роллы</li>
-                </ul>
-            </div>
-
-            <input class="menubox2" id="menu4" type="radio" name="menu" value="2">
-
-            <label class="label3" for="menu4">
-                Скрыть
-            </label>
-
-            <p><a name="menulist3">Украинское меню</a></p>
-
-            <input class="menubox3" id="menu5" type="radio" name="menu" value="1">
-
-            <label class="label3" for="menu5">
-                Показать
-            </label>
-
-            <div class="list3">
-                <ul>
-                    <li>Борщ</li>
-                    <li>Сало</li>
-                    <li>Ребра в карамели</li>
-                </ul>
-            </div>
-
-            <input class="menubox3" id="menu6" type="radio" name="menu" value="2">
-
-            <label class="label3" for="menu6">
-                Скрыть
-            </label>
+        <div class="list">
+            <ul>
+                <li>Палтус в сливочном соусе</li>
+                <li>Лазанья с пряным болоньезе</li>
+                <li>Тортилья</li>
+            </ul>
         </div>
 
-        <hr>
+        <input class="menubox1" id="menu2" type="radio" name="menu" value="2">
 
-        <div class="pressonit">
-            <label class="label2" for="press1">
-                Нажать
-            </label>
-            <input class="press" id="press1" type="checkbox" name="press" value="press">
+        <label class="label3" for="menu2">
+            Скрыть
+        </label>
+
+        <p><a name="menulist2">Японское меню</a></p>
+
+        <input class="menubox2" id="menu3" type="radio" name="menu" value="1">
+
+        <label class="label3" for="menu3">
+            Показать
+        </label>
+
+        <div class="list2">
+            <ul>
+                <li>Роллы Филадельфия</li>
+                <li>Суп Том-ям</li>
+                <li>Сладкие роллы</li>
+            </ul>
         </div>
+
+        <input class="menubox2" id="menu4" type="radio" name="menu" value="2">
+
+        <label class="label3" for="menu4">
+            Скрыть
+        </label>
+
+        <p><a name="menulist3">Украинское меню</a></p>
+
+        <input class="menubox3" id="menu5" type="radio" name="menu" value="1">
+
+        <label class="label3" for="menu5">
+            Показать
+        </label>
+
+        <div class="list3">
+            <ul>
+                <li>Борщ</li>
+                <li>Сало</li>
+                <li>Ребра в карамели</li>
+            </ul>
+        </div>
+
+        <input class="menubox3" id="menu6" type="radio" name="menu" value="2">
+
+        <label class="label3" for="menu6">
+            Скрыть
+        </label>
+    </div>
+
+    <hr>
+
+    <div class="pressonit">
+        <label class="label2" for="press1">
+            Нажать
+        </label>
+        <input class="press" id="press1" type="checkbox" name="press" value="press">
+    </div>
 
 
 
