@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('../img/texture4.jfif') top left repeat;
+
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.border {
+    padding: 30px;
+    position: relative;
+}
+
+.container {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    top: -270px;
+    left: 0;
+}
+
+.container::before,
+.container::after {
+    content: '';
+    width: 265px;
+    height: 265px;
+    background-color: #b0bec5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg) scale(1.25);
+    opacity: 0;
+}
+
+.container::before {
+    left: -37px;
+}
+
+.container::after {
+    left: 167px;
+}
+
+.box {
+    width: 400px;
+    height: 265px;
+    border: 2px solid #455a64;
+    overflow: hidden;
+}
+
+.box img {
+    width: 400px;
+}
+
+.text {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 26px;
+    text-transform: uppercase;
+    padding: 15px 15px 0 15px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    padding: 15px;
+}
+
+#btn {
+    text-align: center;
+    padding: 0;
+    margin-top: -15px;
+}
+
+a {
+    position: relative;
+    opacity: 0;
+    padding: 10px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#grad {
+    position: relative;
+    opacity: 0;
+    justify-content: center;
+    margin-top: 45px;
+    margin-left: 100px;
+    padding: 0;
+    content: '';
+    width: 60px;
+    height: 30px;
+    transform: skewX(-45deg);
+    background: linear-gradient(90deg, rgba(128, 128, 128, 0) 20%, #fff 40%, rgba(128, 128, 128, 0) 60%, #fff 80%, rgba(128, 128, 128, 0));
+}
+
+.border:hover #grad {
+    margin-left: 200px;
+    transition: 1s ease-in-out;
+    opacity: 1;
+    z-index: 2;
+}
+
+.border:hover .container::before,
+.border:hover .container::after {
+    opacity: 0.2;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.border:hover a {
+    opacity: 1;
+    transition: 1s;
+    z-index: 2;
+}
+
+.border:hover img {
+    filter: blur(1px);
+}
+
+.border:hover h1,
+.border:hover #text {
+    opacity: 0.5;
+}

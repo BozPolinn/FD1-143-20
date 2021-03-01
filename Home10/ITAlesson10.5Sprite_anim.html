@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprite</title>
+    <style>
+        .animated {
+            position: absolute;
+            top: 50px;
+            left: 300px;
+            width: 104px;
+            height: 74px;
+            animation: bird steps(5) 0.7s infinite;
+        }
+
+        @keyframes bird {
+            from {background: url('img/animation2_1.jpg') 0 0;}
+            to {background: url('img/animation2_1.jpg') -520px 0;}
+        }
+
+        .man {
+            position: absolute;
+            top: 400px;
+            left: 380px;
+            width: 112px;
+            height: 156px;
+            animation: runman steps(5) 1s infinite;
+            z-index: 1;
+        }
+
+        @keyframes runman {
+            from {background: url('img/animation3.png') 0 0;}
+            to {background: url('img/animation3.png') -560px 0;}
+        }
+
+        .strange {
+            position: absolute;
+            top: 100px;
+            left: 700px;
+            width: 145px;
+            height: 180px;
+            animation: brocolli 1s steps(10) infinite;
+        }
+
+        @keyframes brocolli {
+            from {background: url('img/animation4.png') 0 0;}
+            to {background: url('img/animation4.png') -1455px 0;}
+        }
+
+        .zombie {
+            position: absolute;
+            top: 200px;
+            left: 100px;
+            width: 305px;
+            height: 388px;
+            animation: zombiee steps(9) 1s infinite;
+        }
+
+        @keyframes zombiee {
+            from {background: url('img/animation5_1.png') 0 0;}
+            to {background: url('img/animation5_1.png') -2745px 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="animated"></div>
+    <div class="man"></div>
+    <div class="strange"></div>
+    <div class="zombie"></div>
+</body>
+</html>
