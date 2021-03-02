@@ -7,44 +7,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="ITAlesson10dop.css">
     <title>Animation</title>
+    <script src="https://kit.fontawesome.com/be0338538c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="flexbox">
+    <div class="headline">
+        <h2>Playlists</h2>
+    </div>
+
+    <div class="flexbox playlist">
         <div class="border">
             <div class="box">
                 <img src="../img/music.jfif" alt="person">
 
-                <div class="container">
+                <div class="container" id="firstcont">
                     <div class="text">
-                        <h1>Плейлист</h1>
+                        <h1>New</h1>
                         <p id="text">Вы еще не слушали эти треки, но, похоже, они вам понравятся</p>
                         <p id="btn">
                             <a href="#">Прослушать</a>
-                            <p id="grad"></p>
+                        <p id="grad"></p>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- <div class="border">
+        <div class="border">
             <div class="box">
-                <img src="../img/music.jfif" alt="person">
+                <img src="../img/music2.jfif" alt="person">
 
-                <div class="container">
+                <div class="container" id="mood">
                     <div class="text">
-                        <h1>Плейлист</h1>
-                        <p>Вы еще не слушали эти треки, но, похоже, они вам понравятся</p>
-                        <a href="https://music.yandex.by/">Прослушать</a>
+                        <h1>Sunny mood</h1>
+                        <p id="text">Музыка для вашего настроения</p>
+                        <p id="btn2">
+                            <a href="#">Прослушать</a>
+                        <p id="grad"></p>
+                        </p>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="headline">
+        <h2>Podcasts</h2>
+    </div>
+
+    <div class="flexbox podcast">
+        <div class="border">
+            <div class="box">
+                <img src="../img/music4.jfif" alt="person">
+                <div class="contain sud">
+                    <div class="text">
+                        <h1>Неожиданно</h1>
+                        <ul id="list">
+                            <li>Наша маленькая планета</li>
+                            <li>Самый маленький музыкальный инструмент</li>
+                            <li>Вы даже не представляете</li>
+                            <li>Самый отвратительный звук</li>
+                        </ul>
+                        <a href="#">Прослушать</a>
+                        <p id="grad"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="border">
+            <div class="box">
+                <img src="../img/music3.jfif" alt="person">
+                <div class="contain act">
+                    <div class="text">
+                        <h1>Актуально</h1>
+                        <ul id="list">
+                            <li>Как чувствовать себя счастливым</li>
+                            <li>Коротко о главном: правильное питание</li>
+                            <li>Это был тяжелый год 2020</li>
+                            <li>Феминизм 2021</li>
+                        </ul>
+                        <a href="#">Прослушать</a>
+                        <p id="grad"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
+
+    <hr />
+
+    <div class="addition">
+        <div class="play"><i id="playicon" class="far fa-play-circle"></i></div>
+        <div class="silence"><i id="silenceicon" class="fas fa-volume-mute"></i></div>
+        <div class="list"><i id="listicon" class="fas fa-list-ul"></i></div>
+        <div class="addsong"><i id="addsongicon" class="fas fa-plus-circle"></i></div>
+        <div class="payment"><i id="paymenticon" class="far fa-credit-card"></i></div>
+    </div>
+
 
 </body>
 
