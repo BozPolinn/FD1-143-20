@@ -1,0 +1,20 @@
+<i class="fas fa-camera"></i> - фотоаппарат
+<i class="fas fa-images"></i> - список фотографий
+<i class="fas fa-portrait"></i> - фотопортрет
+<i class="fas fa-sd-card"></i> - карта памяти
+<i class="fas fa-users"></i> - команда специалистов
+<i class="fas fa-smile"></i> - смайлик (дискриминация?)
+<i class="fas fa-globe-europe"></i> - выездная съемка
+
+соцсети:
+- <i class="fab fa-facebook"></i>
+	<i class="fab fa-facebook-square"></i> - квадрат
+- <i class="fab fa-instagram-square"></i> - квадрат
+	<i class="fab fa-instagram"></i>
+- <i class="fab fa-telegram"></i>
+	<i class="fab fa-telegram-plane"></i> - самолет
+- <i class="fab fa-linkedin"></i>
+- <i class="fab fa-viber"></i>
+- <i class="fab fa-twitter-square"></i>
+
+    <script src="https://kit.fontawesome.com/be0338538c.js" crossorigin="anonymous"></script>
