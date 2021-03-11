@@ -3,7 +3,6 @@
 <i class="fas fa-portrait"></i> - фотопортрет
 <i class="fas fa-sd-card"></i> - карта памяти
 <i class="fas fa-users"></i> - команда специалистов
-<i class="fas fa-smile"></i> - смайлик (дискриминация?)
 <i class="fas fa-globe-europe"></i> - выездная съемка
 
 соцсети:
