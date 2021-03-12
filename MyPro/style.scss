@@ -98,7 +98,7 @@ a {
         background-color: #e8eaf6;
         border: 1px solid $darkvio;
         transition: 0.5s;
-    }
+        box-shadow: 0px 0px 5px 2px rgba(205,208,203,1);    }
 }
 .btn2 {
     width: 200px;
@@ -285,6 +285,86 @@ section#news {
                     img {
                         width: 300px;
                         height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section#feedback {
+    .container {
+        padding: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        .col {
+            margin: 0;
+            padding: 0;
+            width: 50%;
+            img {
+                width: 100%;
+                padding: 0 0 0 30px;
+            }
+            &:first-child {
+                margin-right: 30px;
+            }
+            form {
+                input {
+                    width: 100%;
+                    margin: 0 0 30px;
+                    padding: 5px 10px;
+                    color: $dgreen;
+                    border-radius: 5px;
+                    border: 1px solid $dgreen;
+                    outline-color: $dgreen;
+                    background-color: $lgrey;
+                    &::placeholder {
+                        color: $dgreen;
+                    }
+                    &:focus {
+                        color: $dgreen;
+                        border: 1px solid $head;
+                        border-radius: 5px;
+                    }
+                    &:active {
+                        color: $dgreen;
+                        background-color: $lgrey;
+
+                    }
+                }
+                input[type=radio] {
+                    width: 90px;
+                    margin: 0;
+                }
+                input[type=submit] {
+                    width: max-content;
+                    color: $darkvio;
+                    background-color: $buthbg;
+                    border: 1px solid $darkvio;
+                    animation: Learnmore 5s infinite ease-in-out;
+                }
+                label {
+                    margin: 0;
+                } 
+                textarea {
+                    width: 100%;
+                    height: 85px;
+                    margin: 30px 0 35px;
+                    padding: 5px 10px;
+                    resize: none;
+                    background-color: $lgrey;
+                    border: 1px solid $head;
+                    border-radius: 5px;
+                    &::placeholder {
+                        color: $dgreen;
+                    }
+                    &:focus {
+                        color: $dgreen;
+                        border: 1px solid $head;
+                        border-radius: 5px;
+                        outline-color: $dgreen;
                     }
                 }
             }

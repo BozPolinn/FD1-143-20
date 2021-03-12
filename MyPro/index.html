@@ -152,20 +152,73 @@
                     <div class="preview right">
                         <h3>Съемки в Минске уже скоро!</h3>
                         <p>Проведу Вашу долгожданную съемку в Минске с 10 по 24 апреля.
-                            Для записи на съемку необходимо заполнить форму ниже, после чего 
+                            Для записи на съемку необходимо заполнить форму ниже, после чего
                             я свяжусь с вами для уточнения деталей.
                         </p>
                         <p id="direct">
                             <a class="btn btn2" href="#" target="_blank">
-                               Перейти к форме
+                                Перейти к форме
                             </a>
                         </p>
+                    </div>
+                </div>
+
+                <div class="newsitem">
+                    <div class="preview left">
+                        <h3>Подарочные сертификаты</h3>
+                        <p>Вы можете порадовать своих близких и сделать их праздник особенным,
+                            приобретая подарочный сертификат на фотосъемку.
+                            <br /><br />
+                            Вам надолго запомнятся этот прекрасный день и Ваши эмоции.
+                            <br /><br />
+                            Подробную информацию можно получить в разделе "Услуги".
+                        </p>
+                        <p id="direct">
+                            <a class="btn btn2" href="№u" target="_blank">
+                                Услуги&emsp;&rsaquo;&emsp;&rsaquo;&emsp;&rsaquo;
+                            </a>
+                        </p>
+                    </div>
+                    <div class="visual">
+                        <img src="img/sertificate.png" alt="visual_picture">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="feedback">
+        <div class="container">
+            <div class="col">
+                <h2>Форма заявки</h2>
+                <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="_blank">
+                    <input type="text" name="clientName" placeholder="Ваше имя" required autocomplete="off">
+                    <br />
+                    <input type="email" name="clientMail" placeholder="Ваш e-mail" required autocomplete="off">
+                    <br />
+                    <input type="tel" name="clientNumber" pattern="\+375-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                        placeholder="+375-XX-XХХ-ХХ-ХХ" required autocomplete="off">
+                    <br />
+
+                    <span>Вы являетесь:</span>
+                    <br />
+                    <input id="organisation" type="radio" name="aim" value="org" required>
+                    <label for=organisation>Организацией / предпринимателем</label>
+                    <br />
+                    <input id="personalphoto" type="radio" name="aim" value="pers" required>
+                    <label for=personalphoto>Частным лицом</label>
+                    <br />
+
+                    <textarea placeholder="Ваш комментарий"></textarea>
+                    <br />
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+            <div class="col">
+                <img src="img/logo_lovestory.jpg" alt="photoform">
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
