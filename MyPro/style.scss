@@ -1,121 +1,5 @@
-// Variable parameters
-
-// fonts
-$s: 300;
-$m: 400;
-$l: 500;
-$xl: 600;
-
-// colors
-$dark: #757780;
-$header: #f9f7f77d;
-$head: #3d3d3d;
-$darkvio: #69779B;
-$purpleL: #939FC0;
-$grey: #EAEAEA;
-$lgrey: #F9F7F7;
-$white: #FFFFFF;
-$dgreen: #5B7561;
-$wave: #7BA7A6;
-$mint: #C5DEDD;
-$buthbg: #e8eaf6;
-
-// font_Size
-$h_main: 2rem;
-$h_logo: 1.4rem;
-$h_menu: 1.3rem;
-$h_small: 1rem;
-$h_body: 1rem;
-
-// container-size
-$container: 1140px;
-
-// Common styles
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: $white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: $h_small;
-    color: $dark;
-}
-
-h1 {
-    font-size: $h_main;
-    font-weight: $l;
-    text-transform: uppercase;
-    line-height: 1.167;
-    letter-spacing: 0.15em;
-    margin: 30px auto 15px;
-}
-h2 {
-    font-size: $h_main;
-    font-weight: $l;
-    letter-spacing: 0.15em;
-    color: $dark;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-}
-h3 {
-    font-size: $h_logo;
-    font-weight: $l;
-    color: $darkvio;
-    margin: 15px auto;
-}
-h4 {
-    font-size: $h_small;
-    font-weight: $l;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: $head;
-}
-a {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-}
-
-.container {
-    margin: 0 auto;
-    width: $container;
-    padding: 60px 0;
-}
-.btn {
-    margin: 15px auto;
-    padding: 7px 10px;
-    color: $wave;
-    font-weight: $l;
-    background-color: $lgrey;
-    border: 1px solid $wave;
-    border-radius: 5px;
-    &:hover {
-        color: $darkvio;
-        background-color: #e8eaf6;
-        border: 1px solid $darkvio;
-        transition: 0.5s;
-        box-shadow: 0px 0px 5px 2px rgba(205,208,203,1);    }
-}
-.btn2 {
-    width: 200px;
-}
-
-.right {
-    margin-left: 30px;
-}
-.left {
-    margin-right: 30px;
-}
-
-@keyframes Learnmore {
-    from {opacity: 0.5; color: $darkvio;}
-    50% {opacity: 1; color: $dgreen;}
-    100% {opacity: 0.5; color: $darkvio;}
-}
+@import "variable.scss";
+@import "commonStyles.scss";
 
 // header style
 header {
@@ -223,9 +107,6 @@ section#advantage {
                 }
             }
         }
-        a {
-            animation: Learnmore 5s infinite ease-in-out;
-        }
     }
 }
 
@@ -271,7 +152,6 @@ section#news {
                             text-decoration: none;
                             display: inline-block;
                             background-color: #ffffff85;
-                            animation: Learnmore 5s infinite ease-in-out;
                             &:hover {
                                 color: inherit;
                                 transform: scale(1.1);
@@ -340,10 +220,17 @@ section#feedback {
                 }
                 input[type=submit] {
                     width: max-content;
-                    color: $darkvio;
-                    background-color: $buthbg;
-                    border: 1px solid $darkvio;
-                    animation: Learnmore 5s infinite ease-in-out;
+                    color: $white;
+                    font-weight: $l;
+                    background-color: $dgreen;
+                    border: 1px solid $dgreen;
+                    border-radius: 5px; 
+                    &:hover {
+                        color: $dark;
+                        color: $white;
+                        transition: 0.5s;
+                        transform: scale(1.1);
+                    }
                 }
                 label {
                     margin: 0;
