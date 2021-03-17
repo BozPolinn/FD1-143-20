@@ -15,7 +15,7 @@ gulp.task('sass', function () {
     cssnano()
   ];
 
-  return gulp.src('./*.scss')
+  return gulp.src(['./**/*.scss', '!**/node_modules/**', '!**/node_modules'])
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.write({ includeContent: false }))
@@ -26,5 +26,5 @@ gulp.task('sass', function () {
 });
  
 gulp.task('sass:watch', function () {
-  gulp.watch('./*.scss', gulp.parallel('sass'));
+  gulp.watch(['./**/*.scss', '!**/node_modules/**', '!**/node_modules'], gulp.parallel('sass'));
 });

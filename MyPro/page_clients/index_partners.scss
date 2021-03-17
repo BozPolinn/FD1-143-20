@@ -1,3 +1,89 @@
 @import "../variable.scss";
 @import "../commonStyles.scss";
 
+header {
+    background-color: $header;
+    font-size: $h_menu;
+    .container {
+        width: $container;
+        padding: 30px 0;
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0;
+            padding-left: 0;
+            li {
+                text-transform: uppercase;
+                font-weight: $l;
+                letter-spacing: 0.05em;
+                & :hover {
+                    color: $wave;
+                    transition: 0.3s;
+                }
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+section#head_clients {
+    div.container {
+        div.head_cli {
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+section {
+    .container {
+        .unit { 
+            .line {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                .logo_client {
+                    margin: 15px 30px 30px 0;
+                    img {
+                        width: 150px;
+                    }
+                }
+                .head_client {
+                    h3, p {
+                        color: $head;
+                        margin-bottom: 30px;
+                    }
+                    h3 {
+                        a {
+                            text-decoration: none;
+                            &:hover {
+                                color: $dgreen;
+                            }
+                        }
+                    }
+                }
+            }
+            .row.justify-content-center {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+section.mint {
+    background-color: $mint;
+}
+
+section.white {
+    background-color: $white;
+}
+
