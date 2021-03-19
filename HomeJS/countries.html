@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        input[type=button] {
+            border: 1px solid black;
+            color: black;
+            border-radius: 5px;
+            margin: 15px;
+            padding: 15px;
+            font-size: 15px;
+            width: 300px;
+        }
+
+        input[type=button]:hover {
+            cursor: pointer;
+            box-shadow: 0px 0px 4px 1px rgba(34, 60, 80, 0.21);
+        }
+    </style>
+</head>
+
+<!-- 
++ В проекте COUNTRIES на веб-странице добавить кнопки "ввод информации о стране", "получение информации о стране",
+"перечень всех стран", "удаление информации о стране".
+
+По кнопке "ввод информации о стране" нужно последовательно
++ спросить название страны и её столицы
++ и добавить информацию о cтране в хэш.
+
+По кнопке "получение информации о стране" нужно 
++ спросить название страны 
++ и либо выдать информацию по ней (столицу), либо выдать "нет информации о стране".
+
+По кнопке "перечень всех стран" нужно 
++ выдать перечень всех стран и их столиц в консоль.
+
+По кнопке "удаление информации о стране" нужно
++ спросить название страны
++ и удалить из хэша информацию о ней.
+
+Для работы с хэшем стран следует использовать функции, которые на занятии были вынесены в скриптовый файл countries.js,
+не изменяя их (считать их библиотечными, готовыми). 
+
++ То есть, в кнопках по onclick следует вызывать другие функции,
+которые задают пользователю необходимые вопросы и затем уже вызывают библиотечные функции. -->
+
+<body>
+    <input type="button" name="enter_info" value="ввод информации о стране" onclick="inputData()">
+    <br />
+    <input type="button" name="get_info" value="получение информации о стране" onclick="infoClick()">
+    <br />
+    <input type="button" name="list_info" value="перечень всех стран" onclick="listWatch()">
+    <br />
+    <input type="button" name="delete_info" value="удаление информации о стране" onclick="itemDelete ()">
+
+
+    <script>
+        var country;
+        var capital;
+        var countryCap = {'France':'Paris', 'Germany':'Berlin'};
+        var inputName;
+
+        function inputData() {
+            country = prompt("Введите название страны");
+            capital = prompt("Введите название столицы");
+            countryCap[country] = capital;
+        }
+
+        function infoClick() {
+            inputName = prompt("Введите название страны");
+            if (inputName in countryCap) {
+                alert('Столица ' + inputName + ' - ' + countryCap[inputName]);
+            }
+            else {
+                alert('Нет информации о' + inputName);
+            }
+        }
+
+        function listWatch() {
+            // - альтернативный вариант вывести данные в строку - через console.log(countryCap);
+            for (country in countryCap) {
+                console.log('Country - ' + country + ', capital - ' + countryCap[country]);
+            }
+        }
+
+
+
+        function itemDelete () {
+            var deletedName = prompt('Какую страну Вы хотите удалить из списка?');
+            if (deletedName in countryCap) {
+                delete countryCap[deletedName];
+            }
+            else {
+                alert('Такой страны нет в списке!');
+            }
+        }
+
+
+    </script>
+</body>
+</html>
