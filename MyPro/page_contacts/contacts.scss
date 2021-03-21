@@ -1,0 +1,117 @@
+@import "../variable.scss";
+@import "../commonStyles.scss";
+
+.attention {
+    font-weight: $xl;
+    color: $attention;
+    
+}
+
+// section#orderhub {
+//     .container {
+//         .order {
+//             display: flex;
+//             flex-direction: row;
+//             align-items: flex-start;
+//             justify-content: space-between;
+//             .order_img {
+//                 width: 280px;
+//                 margin-left: 30px;
+//                 img {
+//                     width: 100%;
+//                 }
+//             }
+//             .order_list {
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: flex-start;
+//                 justify-content: space-between;
+//                 .order_pair {
+//                     display: flex;
+//                     flex-direction: row;
+//                     align-items: center;
+//                     justify-content: space-between;
+//                     .nav_item {
+//                         margin-right: 30px;
+//                         font-size: 40px;
+//                         color: $wave;
+//                         &:first-child {
+//                             font-size: 35px;
+//                         }
+//                     }
+//                     .text_item {
+//                         text-align: justify;
+//                         a {
+//                             text-decoration: underline;
+//                             font-weight: $xl;
+//                             font-size: $attent;
+//                             &:hover {
+//                                 color: $wave;
+//                             }
+//                         }
+//                         span {
+//                             font-weight: $l;
+//                         }
+//                     }
+//                 }
+//             }
+//         } 
+//     }
+// }
+
+section#contact_items {
+    .container {
+        .how_to_find {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            .row_find {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                width: 50%;
+                margin-bottom: 30px;
+                .htf_item {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 15px;
+                    .htf_icon {
+                        text-align: center;
+                        margin: 0 30px 0 15px;
+                        i {
+                            font-size: 40px;
+                            color: $wave;
+                        }
+                    }
+                    .htf_info {
+                        span.attention {
+                        font-size: $mini;
+                        position: relative;
+                        top: -7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+section#feedback {
+    .container {
+        width: $container;
+        .col {
+            width: 50%;
+            padding: 0;
+            &:last-child {
+                margin-left: 30px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

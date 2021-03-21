@@ -99,3 +99,170 @@ a {
     50% {opacity: 1; color: $dgreen;}
     100% {opacity: 0.5; color: $darkvio;}
 }
+
+// header style
+header {
+    background-color: $header;
+    font-size: $h_menu;
+    .container {
+        width: $container;
+        padding: 30px 0;
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0;
+            padding-left: 0;
+            li {
+                text-transform: uppercase;
+                font-weight: $l;
+                letter-spacing: 0.05em;
+                & :hover {
+                    color: $wave;
+                    transition: 0.3s;
+                }
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+// footer
+footer {
+    background-color: $header;
+    .container {
+        width: $container;
+        padding: 30px 0;
+        position: relative;
+        .placing {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 225px;
+            .link {
+                & + .link {
+                    margin-left: 15px;
+                }
+                &:nth-child(3) {
+                    margin-left: 30px;
+                }
+                a {
+                    &:hover {
+                        color: $wave;
+                    }
+                    text-decoration: none;
+                    cursor: pointer;
+                    color: $darkvio;
+                    i {
+                        font-size: 35px;
+                        color: $darkvio;
+                        &:hover {
+                            color: $wave;
+                        }
+                    }
+                }
+            }
+        }
+        .copyright {
+            position: absolute;
+            bottom: 30px;
+            right: 0;
+            p {
+                font-size: $h_body;
+                line-height: 22px;
+                color: $head;
+                text-align: justify;
+                margin: 0 15px 0 0;
+            }
+        }
+    }
+}
+
+section#feedback {
+    .container {
+        padding: 60px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        .col {
+            &:first-child {
+                margin-right: 30px;
+            }
+            form {
+                input {
+                    width: 100%;
+                    margin: 0 0 30px;
+                    padding: 5px 10px;
+                    color: $dgreen;
+                    border-radius: 5px;
+                    border: 1px solid $dgreen;
+                    outline-color: $dgreen;
+                    background-color: $lgrey;
+                    &::placeholder {
+                        color: $dgreen;
+                    }
+                    &:focus {
+                        color: $dgreen;
+                        border: 1px solid $head;
+                        border-radius: 5px;
+                    }
+                    &:active {
+                        color: $dgreen;
+                        background-color: $lgrey;
+
+                    }
+                }
+                input[type=radio] {
+                    width: 90px;
+                    margin: 0;
+                    background-color: $white;
+                }
+                input[type=submit] {
+                    width: max-content;
+                    color: $white;
+                    font-weight: $l;
+                    background-color: $dgreen;
+                    border: 1px solid $dgreen;
+                    border-radius: 5px; 
+                    &:hover {
+                        color: $dark;
+                        color: $white;
+                        transition: 0.5s;
+                        transform: scale(1.1);
+                    }
+                }
+                label {
+                    margin: 0;
+                } 
+                textarea {
+                    width: 100%;
+                    height: 85px;
+                    margin: 30px 0 35px;
+                    padding: 5px 10px;
+                    resize: none;
+                    background-color: $lgrey;
+                    border: 1px solid $head;
+                    border-radius: 5px;
+                    &::placeholder {
+                        color: $dgreen;
+                    }
+                    &:focus {
+                        color: $dgreen;
+                        border: 1px solid $head;
+                        border-radius: 5px;
+                        outline-color: $dgreen;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,56 +1,37 @@
 @import "../variable.scss";
 @import "../commonStyles.scss";
 
-header {
-    background-color: $header;
-    font-size: $h_menu;
+#head_clients, #other_cli {
     .container {
-        width: $container;
-        padding: 30px 0;
-        ul {
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 0;
-            padding-left: 0;
-            li {
-                text-transform: uppercase;
-                font-weight: $l;
-                letter-spacing: 0.05em;
-                & :hover {
-                    color: $wave;
-                    transition: 0.3s;
-                }
-                a {
-                    text-decoration: none;
-                    color: inherit;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-}
-
-section#head_clients {
-    div.container {
         .head_cli {
-            p {
-                margin-bottom: 0;
+            div {
+                margin-bottom: 15px;
             }
         }
         .logo_line {
             margin-top: 30px;
             display: flex;
             flex-direction: row;
-            align-items: flex-start;
+            align-items: center;
             justify-content: space-between;
             div {
+                margin-right: 30px;
+                &:last-of-type {
+                    margin-right: 0;
+                }
                 img {
-                    width: 90%;
+                    width: 100%;
+                    text-align: center;
                 }
             }
+        }
+    }
+}
+
+#other_cli {
+    .container {
+        .logo_line {
+            margin-top: 0;
         }
     }
 }

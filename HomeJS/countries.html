@@ -66,18 +66,18 @@
 
 
     <script>
-        var country;
-        var capital;
         var countryCap = {'France':'Paris', 'Germany':'Berlin'};
-        var inputName;
 
         function inputData() {
+            var country;
+            var capital;
             country = prompt("Введите название страны");
             capital = prompt("Введите название столицы");
             countryCap[country] = capital;
         }
 
         function infoClick() {
+            var inputName;
             inputName = prompt("Введите название страны");
             if (inputName in countryCap) {
                 alert('Столица ' + inputName + ' - ' + countryCap[inputName]);
@@ -89,9 +89,11 @@
 
         function listWatch() {
             // - альтернативный вариант вывести данные в строку - через console.log(countryCap);
+            var countryList = '';
             for (country in countryCap) {
-                console.log('Country - ' + country + ', capital - ' + countryCap[country]);
+                countryList = countryList + 'Country - ' + country + ', capital - ' + countryCap[country] + '\n';
             }
+            alert(countryList);
         }
 
 
