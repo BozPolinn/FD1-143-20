@@ -1,90 +1,37 @@
 @import "../variable.scss";
 @import "../commonStyles.scss";
 
-.attention {
-    font-weight: $xl;
-    color: $attention;
-    
-}
-
-// section#orderhub {
-//     .container {
-//         .order {
-//             display: flex;
-//             flex-direction: row;
-//             align-items: flex-start;
-//             justify-content: space-between;
-//             .order_img {
-//                 width: 280px;
-//                 margin-left: 30px;
-//                 img {
-//                     width: 100%;
-//                 }
-//             }
-//             .order_list {
-//                 display: flex;
-//                 flex-direction: column;
-//                 align-items: flex-start;
-//                 justify-content: space-between;
-//                 .order_pair {
-//                     display: flex;
-//                     flex-direction: row;
-//                     align-items: center;
-//                     justify-content: space-between;
-//                     .nav_item {
-//                         margin-right: 30px;
-//                         font-size: 40px;
-//                         color: $wave;
-//                         &:first-child {
-//                             font-size: 35px;
-//                         }
-//                     }
-//                     .text_item {
-//                         text-align: justify;
-//                         a {
-//                             text-decoration: underline;
-//                             font-weight: $xl;
-//                             font-size: $attent;
-//                             &:hover {
-//                                 color: $wave;
-//                             }
-//                         }
-//                         span {
-//                             font-weight: $l;
-//                         }
-//                     }
-//                 }
-//             }
-//         } 
-//     }
-// }
-
 section#contact_items {
     .container {
         .how_to_find {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
             .row_find {
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 justify-content: space-between;
                 align-items: flex-start;
-                width: 50%;
+                width: 100%;
                 margin-bottom: 30px;
                 .htf_item {
                     display: flex;
                     flex-direction: row;
                     justify-content: flex-start;
                     align-items: center;
-                    padding: 15px;
+                    margin: 0 15px 0 0;
+                    padding-bottom: 15px;
+                    width: 250px;
+                    border-bottom: 1px solid $head;
                     .htf_icon {
-                        text-align: center;
-                        margin: 0 30px 0 15px;
+                        width: 50px;
+                        height: 50px;
+                        text-align: left;
+                        margin-right: 30px;
                         i {
                             font-size: 40px;
-                            color: $wave;
+                            color: $dgreen;
                         }
                     }
                     .htf_info {
@@ -93,22 +40,143 @@ section#contact_items {
                         position: relative;
                         top: -7px;
                         }
+                        a {
+                            color: $head;
+                            text-decoration: none;
+                            &:hover {
+                                color: $darkvio;
+                                font-weight: $l;
+                                text-decoration: none;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                .htf_item + .htf_item {
+                    margin-right: 0;
+                }
+                .htf_item:last-child {
+                    .htf_icon {
+                        i {
+                            font-size: 35px;
+                        }
                     }
                 }
             }
         }
+        .note {
+            &:last-child {
+                text-align: center;
+            }
+            span.attention {
+                font-size: $mini;
+                position: relative;
+                top: -7px;
+            }
+            .btn {
+                background-color: $dgreen;
+            }
+        }
+        .note + .note {
+            margin-top: 30px;
+        }
+    }
+}
+
+.wrapper {
+    height: 70vh;
+    .parallax-img {
+        height: 100%;
+        background: url('../img/contacts/parallax-img_2.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
 section#feedback {
     .container {
+        padding: 60px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
         width: $container;
         .col {
-            width: 50%;
             padding: 0;
-            &:last-child {
-                margin-left: 30px;
+            &:first-child {
+                margin-right: 60px;
             }
+            form {
+                input {
+                    width: 100%;
+                    margin: 0 0 30px;
+                    padding: 5px 10px;
+                    color: $dgreen;
+                    border-radius: 5px;
+                    border: 1px solid $dgreen;
+                    outline-color: $dgreen;
+                    background-color: $lgrey;
+                    &::placeholder {
+                        color: $dgreen;
+                    }
+                    &:focus {
+                        color: $dgreen;
+                        border: 1px solid $head;
+                        border-radius: 5px;
+                    }
+                    &:active {
+                        color: $dgreen;
+                        background-color: $lgrey;
+
+                    }
+                }
+                input[type=radio] {
+                    width: 90px;
+                    margin: 0;
+                    background-color: $white;
+                }
+                input[type=submit] {
+                    width: max-content;
+                    color: $white;
+                    font-weight: $l;
+                    background-color: $dgreen;
+                    border: 1px solid $dgreen;
+                    border-radius: 5px; 
+                    &:hover {
+                        color: $dark;
+                        color: $white;
+                        transition: 0.5s;
+                        transform: scale(1.1);
+                    }
+                }
+                label {
+                    margin: 0;
+                } 
+                textarea {
+                    width: 100%;
+                    height: 85px;
+                    margin: 30px 0 35px;
+                    padding: 5px 10px;
+                    resize: none;
+                    background-color: $lgrey;
+                    border: 1px solid $head;
+                    border-radius: 5px;
+                    &::placeholder {
+                        color: $dgreen;
+                    }
+                    &:focus {
+                        color: $dgreen;
+                        border: 1px solid $head;
+                        border-radius: 5px;
+                        outline-color: $dgreen;
+                    }
+                }
+            }
+        }
+        .col_img {
+            width: 400px;
             img {
                 width: 100%;
             }

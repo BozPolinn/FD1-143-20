@@ -25,7 +25,20 @@
                 }
             }
         }
+        .to_order {
+            margin: 60px 0 0;
+            text-align: center;
+            a {
+                animation: btnAnim 5s infinite ease-in-out;
+            }
+        }
     }
+}
+
+@keyframes btnAnim {
+    from {background-color: $darkvio;}
+    50% {background-color: $purpleL;}
+    to {background-color: $darkvio;}
 }
 
 #other_cli {
@@ -33,6 +46,18 @@
         .logo_line {
             margin-top: 0;
         }
+    }
+}
+
+.wrapper {
+    height: 70vh;
+    .parallax-img {
+        background: url('../img/client_portfolio/parallax-img_2.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
     }
 }
 
