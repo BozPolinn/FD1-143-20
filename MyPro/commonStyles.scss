@@ -1,10 +1,15 @@
 @import "variable.scss";
+@import "mixines.scss";
 // Common styles
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
 }
 
 body {
@@ -53,6 +58,9 @@ a {
     margin: 0 auto;
     width: $container;
     padding: 60px 0;
+    @include container_mix {
+        width: $cont992;
+    }
 }
 .btn {  
     margin: 15px auto;
@@ -277,3 +285,9 @@ footer {
         }
     }
 }
+
+// @media all and (max-width: 998px) {
+//     html {
+//         font-size: 12px;
+//     }
+// }

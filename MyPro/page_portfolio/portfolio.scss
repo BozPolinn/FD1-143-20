@@ -1,0 +1,31 @@
+@import "../variable.scss";
+@import "../commonStyles.scss";
+
+section {
+    background-color: $mint;
+    & + section {
+        .container {
+            padding-top: 0;
+        }
+    }
+    .container {
+        div {
+            div {
+                a {
+                    outline: none;
+                    img {
+                        width: 300px;
+                        margin: 0 auto;
+                        outline: none;
+                    }
+                }
+            }
+        }
+        .to_order {
+            text-align: center;
+            a.btn {
+                margin: 60px auto 0;
+            }
+        }
+    }
+}

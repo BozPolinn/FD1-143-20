@@ -1,0 +1,14 @@
+@mixin container_mix ()
+{
+    @media all and (max-width: 993px)
+    {
+        @content;
+    }
+}
+
+@mixin icon_font {
+    @media all and (max-width: 993px)
+    {
+        @content;
+    }
+}

@@ -1,5 +1,6 @@
 @import "variable.scss";
 @import "commonStyles.scss";
+@import "mixines.scss";
 
 // carousel
 section#slidercaroudel {
@@ -62,6 +63,9 @@ section#advantage {
                     width: 20%;
                     text-align: center;
                     margin: 10px 30px 0 0;
+                    @include icon_font {
+                        font-size: 45px;
+                    }
                 } 
                 div.prop {
                     width: 80%;
