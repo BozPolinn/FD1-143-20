@@ -2,14 +2,8 @@
 @import "mixines.scss";
 // Common styles
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html {
-    font-size: 16px;
+    @include font_size;
 }
 
 body {
@@ -17,6 +11,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: $h_small;
     color: $dark;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -56,11 +53,8 @@ a {
 
 .container {
     margin: 0 auto;
-    width: $container;
     padding: 60px 0;
-    @include container_mix {
-        width: $cont992;
-    }
+    @include container_mixin;
 }
 .btn {  
     margin: 15px auto;
@@ -116,8 +110,16 @@ header {
     background-color: $header;
     font-size: $h_menu;
     .container {
-        width: $container;
         padding: 30px 0;
+        position: relative;
+        div {
+            position: absolute;
+            top: 5px;
+            right: 0;
+            color: $head;
+            font-size: 15px;
+            display: none;
+        }
         ul {
             list-style-type: none;
             display: flex;
@@ -145,14 +147,12 @@ header {
 }
 
 // feedback
-section#feedback {
+#feedback {
     .container {
-        padding: 60px 0;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        width: $container;
         .col {
             padding: 0;
             &:first-child {
@@ -238,7 +238,6 @@ section#feedback {
 footer {
     background-color: $header;
     .container {
-        width: $container;
         padding: 30px 0;
         position: relative;
         .placing {
@@ -286,8 +285,4 @@ footer {
     }
 }
 
-// @media all and (max-width: 998px) {
-//     html {
-//         font-size: 12px;
-//     }
-// }
+@import "./commonStyles_media.scss";

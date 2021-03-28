@@ -1,5 +1,4 @@
 @import "../variable.scss";
-@import "../commonStyles.scss";
 
 // offers
 section#offers {
@@ -60,7 +59,6 @@ section#offers {
 section#conditions {
     background-color: $mint;
     .container {
-        width: $container;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
