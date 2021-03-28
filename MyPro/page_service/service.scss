@@ -1,7 +1,7 @@
 @import "../variable.scss";
 
 // offers
-section#offers {
+#offers {
     .container {
         .offer_line {
             display: flex;
@@ -56,7 +56,7 @@ section#offers {
     }
 }
 
-section#conditions {
+#conditions {
     background-color: $mint;
     .container {
         display: flex;
@@ -111,7 +111,7 @@ section#conditions {
     to {color: $dgreen; transform: rotate(360deg);}
 }
 
-section#notice {
+#notice {
     .container {
         .note_add {
             display: flex;
@@ -131,3 +131,5 @@ section#notice {
         }
     }
 }
+
+@import "./service_media.scss";
