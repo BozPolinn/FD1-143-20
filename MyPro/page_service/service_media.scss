@@ -8,7 +8,7 @@
                 margin-bottom: 45px;
                 .offer {
                     width: 300px;
-                    height: 400px;
+                    height: 410px;
                 }
             }
         }
@@ -29,7 +29,7 @@
             .offer_line {
                 .offer {
                     width: 270px;
-                    height: 380px;
+                    height: 400px;
                 }
             }
         }
@@ -48,7 +48,16 @@
                 margin-bottom: 30px;
                 .offer {
                     width: 230px;
-                    height: 350px;
+                    height: 360px;
+                    h3 {
+                        padding: 0 10px;
+                    }
+                    ul {
+                        padding: 10px;
+                    }
+                    .to_order {
+                        left: 10px;
+                    }
                 }
             }
         }
@@ -116,6 +125,14 @@
                     margin-bottom: 30px;
                     h3 {
                         font-size: $h_menu;
+                        margin-bottom: 0;
+                        padding: 0 15px;
+                    }
+                    ul {
+                        padding: 15px;
+                    }
+                    .to_order {
+                        left: 15px;
                     }
                 }
             }

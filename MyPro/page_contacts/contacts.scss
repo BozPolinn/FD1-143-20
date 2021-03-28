@@ -1,6 +1,6 @@
 @import "../variable.scss";
 
-section#contact_items {
+#contact_items {
     .container {
         .how_to_find {
             display: flex;
@@ -89,10 +89,12 @@ section#contact_items {
     height: 70vh;
     .parallax-img {
         height: 100%;
-        background: url('../img/contacts/parallax-img_2.jpg');
+        background-image: url('../img/contacts/parallax-img_2.jpg');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 }
+
+@import "./contacts_media.scss";
