@@ -1,0 +1,215 @@
+@import "../variable.scss";
+
+@media all and (max-width: $break_1280) {
+    .wrapper {
+        .parallax-img {
+            background-image: url('../img/client_portfolio/parallax-img_2_1280.jpg');
+        } 
+    }
+
+    #head_clients, #other_cli {
+        .container {
+            .to_order {
+                a {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: $break_1024) {
+    section {
+        .container {
+            .unit {
+                .line {
+                    .logo_client {
+                        margin: 0 30px 15px 0;
+                        a {
+                            img {
+                                width: 100px;
+                            }
+                        }
+                    }
+                    .head_client {
+                        h3  {
+                            margin: 0 auto 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .wrapper {
+        .parallax-img {
+            background-image: url('../img/client_portfolio/parallax-img_2_1024.jpg');
+        } 
+    }
+}
+
+@media all and (max-width: $break_992) {
+    section {
+        .container {
+            .unit {
+                .line {
+                    .head_client {
+                        p {
+                            margin: 0 0 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: $break_800) {
+    #head_clients, #other_cli {
+        .container {
+            .head_cli {
+                h2 {
+                    margin-bottom: 15px;
+                }
+                div {
+                    margin-bottom: 15px;
+                }
+            }
+            .logo_line {
+                margin-top: 0;
+                flex-wrap: wrap;
+                justify-content: center;
+                div {
+                    width: 20%;
+                    margin: 0 0 15px 0;
+                }
+                div + div {
+                    margin-left: 15px;
+                }
+            }
+            .to_order {
+                margin: 15px 0 0;
+            }
+        }
+    }
+    #other_cli {
+        .container {
+            .logo_line {
+                div {
+                    width: 20%;
+                    &:nth-child(5) {
+                        margin-bottom: 0;
+                    } 
+                    &:nth-child(6) {
+                        margin-bottom: 0;
+                    }
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .to_order {
+                margin: 15px 0 0;
+            }
+        }
+    }
+    .wrapper {
+        .parallax-img {
+            background-image: url('../img/client_portfolio/parallax-img_2_800.jpg');
+        } 
+    }
+    section {
+        .container {
+            .unit {
+                .row.justify-content-center {
+                    margin-bottom: 0;
+                    a.col-sm-2 {
+                        flex: 0 0 33.334%;
+                        max-width: 33.334%;
+                        margin-bottom: 45px;
+                    }
+                    &:last-child {
+                        a.col-sm-2:nth-child(4),
+                        a.col-sm-2:nth-child(5),
+                        a.col-sm-2:nth-child(6) {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: $break_630) {
+    section {
+        .container {
+            .unit {
+                .row.justify-content-center {
+                    a.col-sm-2 {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: $break_505) {
+    section {
+        .container {
+            .unit {
+                .line {
+                    .logo_client {
+                        margin: 0 15px 15px 0;
+                        a {
+                            img {
+                                width: 50px;
+                            }
+                        }
+                    }
+                    .head_client {
+                        h3  {
+                            margin: 0 auto 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: $break_425) {
+    #head_clients, #other_cli {
+        .container {
+            .head_cli {
+                h2 {
+                    margin-bottom: 7px;
+                }
+                div {
+                    margin-bottom: 7px;
+                }
+            }
+            .logo_line {
+                div {
+                    margin: 0 0 7px 0;
+                }
+            }
+            .to_order {
+                margin: 7px 0 0;
+            }
+        }
+    }
+    section {
+        .container {
+            .unit {
+                .row.justify-content-center {
+                    a.col-sm-2 {
+                        margin-bottom: 14px;
+                        padding-right: 7px;
+                        padding-left: 7px;
+                    }
+                }
+            }
+        }
+    }
+}

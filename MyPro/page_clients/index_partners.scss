@@ -51,7 +51,7 @@
 .wrapper {
     height: 70vh;
     .parallax-img {
-        background: url('../img/client_portfolio/parallax-img_2.jpg');
+        background-image: url('../img/client_portfolio/parallax-img_2.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
@@ -90,7 +90,7 @@ section {
                 }
             }
             .row.justify-content-center {
-                margin-bottom: 15px;
+                margin-bottom: 30px;
             }
         }
     }
@@ -104,3 +104,4 @@ section.white {
     background-color: $white;
 }
 
+@import "./index_partners_media.scss";

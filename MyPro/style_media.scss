@@ -314,7 +314,8 @@
                         }
                     }
                     .icon {
-                        font-size: 35px; 
+                        font-size: 35px;
+                        width: 40px; 
                     }
                 }
             }
@@ -383,6 +384,7 @@
                     }
                     .icon {
                         font-size: 25px; 
+                        width: 30px; 
                     }
                 }
             }
@@ -409,8 +411,8 @@
                         width: 150px;
                         img {
                             top: -38px;
-                            left: 160px;
-                            opacity: .2;
+                            left: 145px;
+                            opacity: .1;
                         } 
                     }
                     &:nth-child(even) {
@@ -418,8 +420,8 @@
                             width: 150px;
                             img {
                                 top: -64px;
-                                left: 160px;
-                                opacity: .2;
+                                left: 145px;
+                                opacity: .1;
                             }
                         }
                     }
@@ -435,7 +437,7 @@
                     width: 150px;
                     opacity: .2;
                     top: 65px;
-                    left: 160px;
+                    left: 145px;
                 }
                 .order_list {
                     .order_pair {
