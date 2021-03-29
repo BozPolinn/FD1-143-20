@@ -90,6 +90,9 @@
             }
         }
     }
+    .wrapper {
+        display: none;
+    }
 }
 
 @media all and (max-width: $break_505) {

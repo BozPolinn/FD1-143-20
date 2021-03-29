@@ -58,11 +58,8 @@
 
 #conditions {
     background-color: $mint;
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
+    border: 1px solid $mint;
+    .container { 
         .title_text {
             p {
                 margin-bottom: 0;
